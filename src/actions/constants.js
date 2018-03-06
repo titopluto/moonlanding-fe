@@ -1,0 +1,11 @@
+const Constants = {
+    ACTIVE_LAB_PDF: "ACTIVE_LAB_PDF",
+    ACTIVE_DOC_PDF: "ACTIVE_DOC_PDF",
+    AUTH_USER: "AUTH_USER",
+    UNAUTH_USER: "UNAUTH_USER",
+    AUTH_ERROR: "AUTH_ERROR",
+    CLEAR_AUTH_ERROR: "CLEAR_AUTH_ERROR",
+    LOGOUT_USER: "LOGOUT_USER"
+}
+
+export default Constants

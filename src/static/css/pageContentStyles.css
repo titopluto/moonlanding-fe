@@ -1,0 +1,20 @@
+.content-wrapper{
+    font-family: "Nunito-Regular";
+    margin-top: 40px;
+}
+
+.content-wrapper img {
+    height:350px;
+    width: 400px;
+}
+
+.content-wrapper p {
+    font-size: 1.2em;
+    /*font-family: Verdana;*/
+    line-height: 40px;
+}
+
+.content-wrapper .card {
+    border: none;
+}
+

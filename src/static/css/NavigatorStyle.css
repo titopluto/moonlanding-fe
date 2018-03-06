@@ -1,0 +1,35 @@
+/*feature */
+
+.Navigator-wrapper .col-lg-4 {
+  text-align: center;
+}
+
+.Navigator-wrapper a:focus, .Navigator-wrapper a:hover {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.Navigator-wrapper h2 {
+  font-weight: normal;
+}
+.Navigator-wrapper .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+.Navigator-wrapper {
+    /*height: 300px;*/
+    padding: 40px 0;
+    background-image: url('../img/pattern.jpg');
+    color: darkslateblue;
+    font-family: "FjallaOne-Regular";
+
+}
+
+.Navigator-wrapper .description {
+    height: 4.3rem;
+    font-family: "Nunito-Regular";
+    font-size: 0.9rem
+
+}

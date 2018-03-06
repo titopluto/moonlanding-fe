@@ -1,0 +1,25 @@
+/*react icons styling */
+.fa-cubes {
+    color: firebrick;
+    transition: 0.5s
+}
+
+.fa-cubes:active {
+    color:darkgoldenrod;
+    transition: 0.5s;
+}
+
+.fa-cubes-active {
+    color:darkgoldenrod;
+}
+
+.ti-back-arrow {
+    color: firebrick;
+    transition: 0.5s;
+}
+
+.ti-back-arrow:active {
+    color: goldenrod;
+    transition: 0.5s;
+}
+

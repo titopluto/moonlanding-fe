@@ -1,0 +1,35 @@
+{
+  "name": "inwk-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-draggable": "^2.2.6",
+    "react-icons": "^2.2.5",
+    "react-pdf": "^1.8.3",
+    "react-pdfjs": "^1.0.7",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-scrollchor": "^4.0.0",
+    "react-transition-group": "^1.2.0",
+    "reactstrap": "^4.6.2",
+    "redux": "^3.7.2",
+    "redux-form": "^7.0.1",
+    "redux-thunk": "^2.2.0",
+    "saiku-react-pdfjs": "^1.0.2",
+    "simple-react-pdf": "^1.0.8"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

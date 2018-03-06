@@ -1,0 +1,20 @@
+version: '2.0'
+
+services:
+  webserver:
+    image: nginx:latest
+    volumes:
+     - "./nginx.config:/etc/nginx/nginx.conf"
+    ports:
+     - "80:80"
+     - "8080:80"
+    links:
+     - web
+
+  web:
+    build: .
+    command: serve -s build
+    ports:
+      - "5000"
+
+
