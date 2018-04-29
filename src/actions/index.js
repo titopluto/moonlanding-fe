@@ -89,3 +89,20 @@ export const authError = error => {
         payload: error
     })
 }
+
+export const fetchPods = () => {
+    return (dispatch) => {
+        axios.get("http://129.173.143.240:8000/api/pods")
+            .then(pods => {
+                dispatch({type: "RECEIVE_PODS", payload: pods})
+            })
+            .catch(error => {
+                console.error({error}, "Failed to fetch pods")
+                // TODO:: Remove this dispatch and throw error after fixing CORS
+                dispatch({type: "RECEIVE_PODS", payload: [{
+                        "id": 1,
+                        "name": "Pod 1"
+                    }]})
+            })
+    }
+}

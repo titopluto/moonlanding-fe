@@ -29,6 +29,7 @@ class Pod extends React.Component {
 
   render() {
       const  { podName } = this.props
+      console.log(podName)
       const podNameDisplay = podName.match(/\d+/)[0]
 
       return (

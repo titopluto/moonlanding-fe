@@ -10,8 +10,9 @@ import Pod from "./Pod"
 
 
 class PodList extends Component {
-
-
+    componentWillMount() {
+        this.props.fetchPods();
+    }
 
     renderPods(podDevices, podName) {
         const { history } = this.props

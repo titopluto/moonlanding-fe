@@ -1,8 +1,9 @@
 import { connect } from "react-redux"
 import PodList from "../ui/PodList"
+import {fetchPods} from "../../actions";
 
 const mapStateToProps = (state) => ({
         pods: state.all_pods
 })
 
-export default connect(mapStateToProps)(PodList)
+export default connect(mapStateToProps, {fetchPods})(PodList)
