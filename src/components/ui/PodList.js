@@ -24,7 +24,6 @@ class PodList extends Component {
     render() {
 
         const { pods, match } = this.props;
-        // console.log("rendering Podlist")
         return (
             <div>
              <Switch>

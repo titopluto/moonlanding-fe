@@ -11,6 +11,10 @@ class PdfList extends Component {
         this.renderPdfItems = this.renderPdfItems.bind(this)
     }
 
+    componentWillMount() {
+        this.props.fetchCourses();
+    }
+
     renderPdfItems(pdf, name) {
         const collapseId = pdf["name"].split(" ").join("")
         const headingId = `${pdf["name"].split(" ").join("")}Heading`

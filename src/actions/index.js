@@ -3,12 +3,15 @@ import C from "./constants"
 
 const API_URL = "http://access.inwk.dal.ca/api"
 
-export const activeDocPdf = (pdf) => {
-    return ({
+export const activeDocPdf = (filename) => {
+    return (dispatch) => {
+        dispatch({
             type: C.ACTIVE_DOC_PDF,
-            payload: pdf
-        }
-    )
+            payload: {
+                selected: filename
+            }
+        })
+    }
 }
 
 export const activeLabPdf = (pdf) => {
@@ -94,15 +97,51 @@ export const fetchPods = () => {
     return (dispatch) => {
         axios.get("http://129.173.143.240:8000/api/pods")
             .then(pods => {
-                dispatch({type: "RECEIVE_PODS", payload: pods})
+                dispatch({type: "RECEIVE_PODS", payload: pods.data})
             })
             .catch(error => {
                 console.error({error}, "Failed to fetch pods")
                 // TODO:: Remove this dispatch and throw error after fixing CORS
-                dispatch({type: "RECEIVE_PODS", payload: [{
+                /*dispatch({type: "RECEIVE_PODS", payload: [{
                         "id": 1,
                         "name": "Pod 1"
-                    }]})
+                    }]})*/
+            })
+    }
+}
+
+export const fetchDocs = () => {
+    return (dispatch) => {
+        axios.get("http://129.173.143.240:8000/api/documents")
+            .then(({data: documents}) => {
+                dispatch({type: "RECEIVE_DOCS", payload: documents})
+            })
+            .catch(error => {
+                console.error({error}, "Failed to fetch documents")
+                // TODO:: Remove this dispatch and throw error after fixing CORS
+                /*dispatch({type: "RECEIVE_PODS", payload: [{
+                        "id": 1,
+                        "name": "Pod 1"
+                    }]})*/
+            })
+    }
+}
+
+export const fetchCourses = () => {
+    return (dispatch) => {
+        axios.get("http://129.173.143.240:8000/api/courses")
+            .then(({data: labs}) => {
+                dispatch({type: "RECEIVE_COURSES", payload: labs})
+
+/*                dispatch({type: "RECEIVE_COURSES", payload: documents.data})
+*/            })
+            .catch(error => {
+                console.error({error}, "Failed to fetch courses")
+                // TODO:: Remove this dispatch and throw error after fixing CORS
+                /*dispatch({type: "RECEIVE_PODS", payload: [{
+                        "id": 1,
+                        "name": "Pod 1"
+                    }]})*/
             })
     }
 }

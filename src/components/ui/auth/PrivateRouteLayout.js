@@ -7,6 +7,8 @@ import DefaultLayout from "../DefaultLayout"
 
 const PrivateRouteLayout = ({ component, authenticated, verifyToken, ...rest }) => {
     // console.log("authenticated", authenticated)
+    // TODO:: Bipass security for now
+    return <DefaultLayout component={component} {...rest} />
 
     if (authenticated) {
         verifyToken()

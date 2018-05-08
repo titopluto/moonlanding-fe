@@ -10,8 +10,7 @@
     "react-dom": "^15.6.1",
     "react-draggable": "^2.2.6",
     "react-icons": "^2.2.5",
-    "react-pdf": "^1.8.3",
-    "react-pdfjs": "^1.0.7",
+    "react-pdf": "3.0.5",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-scrollchor": "^4.0.0",
@@ -19,9 +18,7 @@
     "reactstrap": "^4.6.2",
     "redux": "^3.7.2",
     "redux-form": "^7.0.1",
-    "redux-thunk": "^2.2.0",
-    "saiku-react-pdfjs": "^1.0.2",
-    "simple-react-pdf": "^1.0.8"
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

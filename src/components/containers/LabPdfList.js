@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import LabPdfList from "../ui/LabPdfList"
-import { activeLabPdf } from "../../actions"
+import { fetchCourses } from "../../actions"
 
 
 const mapStateToProps = (state) => (
@@ -9,4 +9,4 @@ const mapStateToProps = (state) => (
 
 
 
-export default connect(mapStateToProps, { activeLabPdf })(LabPdfList)
+export default connect(mapStateToProps, { fetchCourses })(LabPdfList)

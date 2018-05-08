@@ -11,11 +11,15 @@ class PdfList extends Component {
         this.renderPdfNames = this.renderPdfNames.bind(this)
     }
 
+    componentWillMount() {
+        this.props.fetchDocs();
+    }
+
     renderPdfNames(pdf, name) {
         return (
             <button className="list-group-item list-group-item-action"
                     key={name}
-                    onClick={()=>this.props.activeDocPdf(pdf)}
+                    onClick={()=>this.props.activeDocPdf(pdf['name'])}
                     type="button" >
                 {pdf['name']}
             </button>
@@ -23,6 +27,9 @@ class PdfList extends Component {
     }
 
     render() {
+        if (this.props.pdfs.length === 0) {
+            return null
+        }
         return (
             <div className="pdf-wrapper">
                 <div className="container">

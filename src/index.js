@@ -13,12 +13,10 @@ import App from "./App";
 
 
 
-const initialState = localStorage["inwk-store"] ?
-    JSON.parse(localStorage["inwk-store"]) :
-    initData
+const initialState = initData
 
 
-const saveState = () =>  localStorage["inwk-store"] = JSON.stringify(store.getState())
+const saveState = () => store.getState()
 
 
 const store = storeFactory(initialState)

@@ -5,19 +5,24 @@
 }
 
 .Navigator-wrapper a:focus, .Navigator-wrapper a:hover {
-    color: darkgoldenrod;
+    color: #545DA6;
     text-decoration: underline;
+    webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 
 .Navigator-wrapper h2 {
   font-weight: normal;
 }
-.Navigator-wrapper .col-lg-4 p {
+/*.Navigator-wrapper .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
-
+*/
+.center{
+  text-align: center;
+}
 .Navigator-wrapper {
     /*height: 300px;*/
     padding: 40px 0;
