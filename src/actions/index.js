@@ -1,7 +1,13 @@
 import axios from "axios"
 import C from "./constants"
 
-const API_URL = "http://access.inwk.dal.ca/api"
+//const API_URL = "http://access.inwk.dal.ca/api"
+const TEMP_URL = "http://129.173.143.240:8000/api"
+
+const get_headers = () => {
+    const token = localStorage.getItem("token")
+    return { headers : {'Authorization' : 'Bearer ' + token }}
+}
 
 export const activeDocPdf = (filename) => {
     return (dispatch) => {
@@ -22,11 +28,12 @@ export const activeLabPdf = (pdf) => {
     )
 }
 
+// absolete
 export const verifyToken = () => {
     return dispatch => {
         const token = localStorage.getItem("token")
         if (token) {
-            axios.post(`${API_URL}/api-token-verify/`, {token:token})
+            axios.post(`${TEMP_URL}/api-token-verify/`, {token:token})
                 .then( response => {
                     // console.log("token verified to be valid")
 
@@ -54,7 +61,7 @@ export const verifyTokenExists = () => {
 
 export const loginUser = ({ email, password }, history) => {
     return (dispatch, getState) => {
-        axios.post(`${API_URL}/api-token-auth/`, { username:email, password })
+        axios.post(`${TEMP_URL}/token/`, { username:email, password })
             .then(response => {
                 //update state to  indicate the use is authenticated
                 dispatch({ type: C.AUTH_USER})
@@ -95,7 +102,8 @@ export const authError = error => {
 
 export const fetchPods = () => {
     return (dispatch) => {
-        axios.get("http://129.173.143.240:8000/api/pods")
+        
+        axios.get(`${TEMP_URL}/pods`, get_headers())
             .then(pods => {
                 dispatch({type: "RECEIVE_PODS", payload: pods.data})
             })
@@ -112,7 +120,7 @@ export const fetchPods = () => {
 
 export const fetchDocs = () => {
     return (dispatch) => {
-        axios.get("http://129.173.143.240:8000/api/documents")
+        axios.get(`${TEMP_URL}/documents`, get_headers())
             .then(({data: documents}) => {
                 dispatch({type: "RECEIVE_DOCS", payload: documents})
             })
@@ -129,7 +137,7 @@ export const fetchDocs = () => {
 
 export const fetchCourses = () => {
     return (dispatch) => {
-        axios.get("http://129.173.143.240:8000/api/courses")
+        axios.get(`${TEMP_URL}/courses`, get_headers())
             .then(({data: labs}) => {
                 dispatch({type: "RECEIVE_COURSES", payload: labs})
 
