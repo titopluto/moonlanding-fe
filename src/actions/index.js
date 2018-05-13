@@ -9,6 +9,14 @@ const get_headers = () => {
     return { headers : {'Authorization' : 'Bearer ' + token }}
 }
 
+const token_issue = (error) => {
+    if (error.response.status == 401){
+        return true
+    }else{
+        return false
+    }
+}
+
 export const activeDocPdf = (filename) => {
     return (dispatch) => {
         dispatch({
@@ -102,13 +110,15 @@ export const authError = error => {
 
 export const fetchPods = () => {
     return (dispatch) => {
-        
         axios.get(`${TEMP_URL}/pods`, get_headers())
             .then(pods => {
                 dispatch({type: "RECEIVE_PODS", payload: pods.data})
             })
             .catch(error => {
                 console.error({error}, "Failed to fetch pods")
+                if(token_issue(error)){
+                    dispatch({ type: C.UNAUTH_USER})
+                }
                 // TODO:: Remove this dispatch and throw error after fixing CORS
                 /*dispatch({type: "RECEIVE_PODS", payload: [{
                         "id": 1,
@@ -126,6 +136,9 @@ export const fetchDocs = () => {
             })
             .catch(error => {
                 console.error({error}, "Failed to fetch documents")
+                if(token_issue(error)){
+                    dispatch({ type: C.UNAUTH_USER})
+                }
                 // TODO:: Remove this dispatch and throw error after fixing CORS
                 /*dispatch({type: "RECEIVE_PODS", payload: [{
                         "id": 1,
@@ -145,6 +158,9 @@ export const fetchCourses = () => {
 */            })
             .catch(error => {
                 console.error({error}, "Failed to fetch courses")
+                if(token_issue(error)){
+                    dispatch({ type: C.UNAUTH_USER})
+                }
                 // TODO:: Remove this dispatch and throw error after fixing CORS
                 /*dispatch({type: "RECEIVE_PODS", payload: [{
                         "id": 1,
