@@ -1,7 +1,7 @@
 import React from "react"
 
 import pchute from "../../static/img/pchute.jpeg"
-import redCloud from "../../static/img/red-cloud_f.jpg"
+import redCloud from "../../static/img/cloud-network.jpg"
 
 import cloudHand from "../../static/img/bulb.jpg"
 import {UncontrolledCarousel} from 'reactstrap'

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +222,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
     <option name="width" value="1942" />
@@ -395,7 +393,7 @@
       <workItem from="1526141946646" duration="9272000" />
       <workItem from="1526340911201" duration="1640000" />
       <workItem from="1526524596137" duration="6039000" />
-      <workItem from="1526575621879" duration="608000" />
+      <workItem from="1526575621879" duration="1022000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -422,7 +420,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25663000" />
+    <option name="totallyTimeSpent" value="26077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,7 +432,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="0" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137931" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

@@ -13,31 +13,31 @@ const WindowNavigator = () => {
         <div className="Navigator-wrapper" >
             <Container>
                 <Row className = "center">
-                    <Col lg="4" md="4" xs="6" sm="6">
+                    <Col lg="4" md="4" xs="4" sm="4">
 
                     <div  className="fa-cubes">
 
                         <NavLink className="fa-pods" to="/pods">
-                            <GoPlug style={{ marginTop:`10px`}} size={60}/>
-                            <div style={{ marginTop:`10px`}}>Pod Access</div>
+                            <GoPlug style={{ marginTop:`10px`}} size={75}/>
+                            <div className="font-1" style={{ marginTop:`10px`}}>Pod Access</div>
                         </NavLink>
 
                     </div>
                     </Col>
-                    <Col lg="4" md="4" xs="6" sm="6">
+                    <Col lg="4" md="4" xs="4" sm="4">
                         <div className="fa-cubes">
                             <NavLink className="fa-docs" to="/docs">
-                                <IoDocumentText style={{ marginTop:`10px`}} size={60}/>
-                                <div style={{ marginTop:`10px`}}>Documents</div>
+                                <IoDocumentText style={{ marginTop:`10px`}} size={75}/>
+                                <div className="font-1" style={{ marginTop:`10px`}}>Documents</div>
                             </NavLink>
 
                         </div>
                     </Col>
-                    <Col lg="4" md="4" xs="12" sm="12">
+                    <Col lg="4" md="4" xs="4" sm="4">
                     <div className="fa-cubes">
                        <a className="fa-reservation" href="http://access.inwk.dal.ca">
-                            <GoCalendar style={{ marginTop:`10px`}} size={60}/>
-                            <div style={{ marginTop:`10px`}}>Pod reservation</div>
+                            <GoCalendar style={{ marginTop:`10px`}} size={75}/>
+                            <div className="font-1" style={{ marginTop:`10px`}}>Pod reservation</div>
                         </a>
 
                     </div>
