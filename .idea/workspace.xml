@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/reducers/reducer_device.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/DeviceList.js" afterPath="$PROJECT_DIR$/src/components/containers/DeviceList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/PodList.js" afterPath="$PROJECT_DIR$/src/components/containers/PodList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Carousel.js" afterPath="$PROJECT_DIR$/src/components/ui/Carousel.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Collaboration.js" afterPath="$PROJECT_DIR$/src/components/ui/Collaboration.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Device.js" afterPath="$PROJECT_DIR$/src/components/ui/Device.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DeviceList.js" afterPath="$PROJECT_DIR$/src/components/ui/DeviceList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DocPdfView.js" afterPath="$PROJECT_DIR$/src/components/ui/DocPdfView.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer.js" afterPath="$PROJECT_DIR$/src/components/ui/Footer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Pod.js" afterPath="$PROJECT_DIR$/src/components/ui/Pod.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/PodList.js" afterPath="$PROJECT_DIR$/src/components/ui/PodList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" afterPath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" />
-      <change beforePath="$PROJECT_DIR$/src/data/initialState.js" afterPath="$PROJECT_DIR$/src/data/initialState.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_pods.js" afterPath="$PROJECT_DIR$/src/reducers/reducer_pods.js" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/NavigatorStyle.css" afterPath="$PROJECT_DIR$/src/static/css/NavigatorStyle.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/carousel.css" afterPath="$PROJECT_DIR$/src/static/css/carousel.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/deviceStyles.css" afterPath="$PROJECT_DIR$/src/static/css/deviceStyles.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/iconStyles.css" afterPath="$PROJECT_DIR$/src/static/css/iconStyles.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/pdfStyles.css" afterPath="$PROJECT_DIR$/src/static/css/pdfStyles.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/podStyles.css" afterPath="$PROJECT_DIR$/src/static/css/podStyles.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/styles.css" afterPath="$PROJECT_DIR$/src/static/css/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,7 +70,7 @@
       <file leaf-file-name="DeviceList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ui/DeviceList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
+            <state relative-caret-position="1088">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -420,7 +394,7 @@
       <workItem from="1525822424067" duration="1215000" />
       <workItem from="1526141946646" duration="9272000" />
       <workItem from="1526340911201" duration="1640000" />
-      <workItem from="1526524596137" duration="5846000" />
+      <workItem from="1526524596137" duration="5939000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -429,11 +403,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525808019114</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="End wiring done for devices, Style changes done for the pod devices, documents">
+      <created>1526530539958</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526530539958</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24862000" />
+    <option name="totallyTimeSpent" value="24955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,7 +459,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Styling, doc pdf end point wiring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Styling, doc pdf end point wiring" />
+    <MESSAGE value="End wiring done for devices, Style changes done for the pod devices, documents" />
+    <option name="LAST_COMMIT_MESSAGE" value="End wiring done for devices, Style changes done for the pod devices, documents" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -888,7 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/DeviceList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
+        <state relative-caret-position="1088">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
