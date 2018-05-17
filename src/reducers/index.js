@@ -6,10 +6,12 @@ import authReducer from "./reducer_auth"
 import { docPdfReducer,
         labPdfReducer, activeLabPdfReducer} from "./reducer_pdfs"
 import initState from "../data/initialState"
+import deviceReducer from "./reducer_device";
 
 const appReducer = combineReducers(
     {
         all_pods: podsReducer,
+        device_pods : deviceReducer,
         doc_pdfs : docPdfReducer,
         lab_pdfs: labPdfReducer,
         active_lab_pdf: activeLabPdfReducer,

@@ -57,6 +57,8 @@ class Device extends Component {
                         </Tooltip>
                     </div>
             )
+        } else {
+          return null
         }
 
     }

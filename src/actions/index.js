@@ -169,3 +169,17 @@ export const fetchCourses = () => {
             })
     }
 }
+
+export const fetchDevices = (podId) => {
+  return (dispatch) => {
+    axios.get(`${TEMP_URL}/pods/${podId}/`, get_headers())
+      .then(({data: devices}) => {
+        dispatch({type: "RECEIVE_DEVICES", payload: devices})
+
+        /*                dispatch({type: "RECEIVE_COURSES", payload: documents.data})
+        */            })
+      .catch(error => {
+        console.error(error, "Failed to fetch devices")
+      })
+  }
+}

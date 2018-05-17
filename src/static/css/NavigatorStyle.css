@@ -4,13 +4,13 @@
   text-align: center;
 }
 
-.Navigator-wrapper a:focus, .Navigator-wrapper a:hover {
-    color: #545DA6;
-    text-decoration: underline;
-    webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
+/*.Navigator-wrapper a:focus, .Navigator-wrapper a:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+
+}*/
 
 .Navigator-wrapper h2 {
   font-weight: normal;
@@ -25,7 +25,7 @@
 }
 .Navigator-wrapper {
     /*height: 300px;*/
-    padding: 40px 0;
+    padding: 25px 0;
     background-image: url('../img/pattern.jpg');
     color: darkslateblue;
     font-family: "FjallaOne-Regular";

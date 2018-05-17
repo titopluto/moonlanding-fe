@@ -6,6 +6,9 @@ const initialState = {
     doc_pdfs: {
         documents: []
     },
+    device_pods : {
+      devices : []
+    },
     lab_pdfs,
     active_lab_pdf,
     auth

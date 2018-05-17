@@ -1,17 +1,15 @@
 const podsReducer = (state={}, action) => {
     switch(action.type) {
         case "RECEIVE_PODS":
-            // TODO:: Pod endpoint has bugs. Ask to fix
-            const allPods = state
-            action.payload.map(pod => {
-                console.log(allPods[pod.name],"allPods[pod.name]")
-                if (!allPods[pod.name]) {
-                    allPods[pod.name] = []
-                }
-                allPods[pod.name].push(pod)
-            })
-            return allPods
-        default:
+          return action.payload.reduce((acc, pod) => {
+            if (!acc[pod.name]) {
+              acc[pod.name] = []
+            }
+          acc[pod.name].push(pod)
+          return acc
+    }, {})
+
+ default:
             return state
     }
 }

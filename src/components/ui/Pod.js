@@ -28,13 +28,12 @@ class Pod extends React.Component {
 
 
   render() {
-      const  { podName } = this.props
-      console.log(podName)
+      const  { podName,podDevices } = this.props
       const podNameDisplay = podName.match(/\d+/)[0]
 
       return (
 
-          <Link className="pod pod-background-2" to={`/pods/${podName}`}> {podNameDisplay} </Link>
+          <Link className="pod pod-background-2" to={`/pods/${podDevices[0].id}`}> {podNameDisplay} </Link>
 
 
       );
@@ -45,4 +44,4 @@ export default Pod;
 
 
 
-  
+

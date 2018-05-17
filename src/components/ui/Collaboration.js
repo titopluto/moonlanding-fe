@@ -12,7 +12,6 @@ import fortinetImg from "../../static/img/fortinet.png";
 
 
 const Collaboration = () => {
-    // console.log("rendering Collaboration")
     return(
     <div className="company">
         <Container>

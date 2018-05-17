@@ -20,7 +20,7 @@ class PdfView extends Component {
     }
     const { pageNumber, numPages } = this.state;
     const selectedFile = pdf.find(p => p.name === selected)
-    const fileName = `http://inwk01.inwk.dal.ca/diagrams/${selectedFile.file}.pdf`
+    const fileName = `http://129.173.143.240:8001/${selectedFile.file}`
 
     return (
       <Document file={fileName} onLoadSuccess={this.onDocumentLoad}>

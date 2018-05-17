@@ -1,6 +1,6 @@
 .pod-wrapper {
     /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../../static/img/pattern2.jpg");*/
-    background: url("../img/fabric2x.png");
+    background: url("../img/datacenter.jpeg");
 }
 .pod-list {
     display: flex;
@@ -30,8 +30,9 @@
     font-size: 2em;
     vertical-align: middle;
     line-height: 200px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /*border-top-left-radius: 25px;
+    border-top-right-radius: 25px;*/
+    border-radius: 20px;
 
 }
 
@@ -39,15 +40,17 @@
     /*flex-basis: 90px !important;*/
     height: 220px !important;
     background-color: darkgray;
-    color:lawngreen;
+    color:white;
     font-family: "Nunito-Regular";
     font-weight: bold;
     font-size: 2em;
     transition: 0.5s;
-    border: 5px solid lawngreen;
+    border: 5px solid #c9c9c9;
     transition: 1s;
     text-align: center;
     text-decoration: none;
+    transform: translateY(-15px);
+    background: none;
 
 
 }
@@ -82,7 +85,7 @@
     /*flex-basis: 90px !important;*/
     height: 120px !important;
     transition: 0.5s;
-    border: 5px solid black;
+    border: 5px solid #c9c9c9;
     transition: 0.5s;
     text-decoration: none;
     /*margin  : 0 ;*/

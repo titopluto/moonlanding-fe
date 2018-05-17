@@ -71,9 +71,14 @@ body {
 
 
 /*Navigation styling*/
+.navbar{
+        background-color: #000211 !important;
+
+}
 .navbar-brand {
     color:white !important;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+
 }
 
 .navbar-nav a {
