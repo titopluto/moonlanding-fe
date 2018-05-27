@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/containers/Carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/reducers/reducer_carousel.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Carousel.js" afterPath="$PROJECT_DIR$/src/components/ui/Carousel.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/PodList.js" afterPath="$PROJECT_DIR$/src/components/ui/PodList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" afterPath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" />
-      <change beforePath="$PROJECT_DIR$/src/data/initialState.js" afterPath="$PROJECT_DIR$/src/data/initialState.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -408,7 +399,7 @@
       <workItem from="1526575621879" duration="1022000" />
       <workItem from="1526781765976" duration="632000" />
       <workItem from="1526828364011" duration="3484000" />
-      <workItem from="1527183012836" duration="4584000" />
+      <workItem from="1527183012836" duration="4730000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -438,11 +429,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527454504297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="End wiring done for carousel">
+      <created>1527454529397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527454529397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34777000" />
+    <option name="totallyTimeSpent" value="34923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
