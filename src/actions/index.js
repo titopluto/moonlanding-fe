@@ -139,11 +139,6 @@ export const fetchDocs = () => {
                 if(token_issue(error)){
                     dispatch({ type: C.UNAUTH_USER})
                 }
-                // TODO:: Remove this dispatch and throw error after fixing CORS
-                /*dispatch({type: "RECEIVE_PODS", payload: [{
-                        "id": 1,
-                        "name": "Pod 1"
-                    }]})*/
             })
     }
 }
@@ -161,11 +156,6 @@ export const fetchCourses = () => {
                 if(token_issue(error)){
                     dispatch({ type: C.UNAUTH_USER})
                 }
-                // TODO:: Remove this dispatch and throw error after fixing CORS
-                /*dispatch({type: "RECEIVE_PODS", payload: [{
-                        "id": 1,
-                        "name": "Pod 1"
-                    }]})*/
             })
     }
 }
@@ -180,6 +170,20 @@ export const fetchDevices = (podId) => {
         */            })
       .catch(error => {
         console.error(error, "Failed to fetch devices")
+      })
+  }
+}
+export const fetchCarousel = () => {
+  console.log("hhhggygyg")
+  return (dispatch) => {
+    axios.get(`${TEMP_URL}/carouselcontent`, get_headers())
+      .then(({data: carousel}) => {
+        dispatch({type: "RECEIVE_CAROUSEL", payload: carousel})
+
+        /*                dispatch({type: "RECEIVE_COURSES", payload: documents.data})
+        */            })
+      .catch(error => {
+        console.error(error, "Failed to fetch carousel")
       })
   }
 }

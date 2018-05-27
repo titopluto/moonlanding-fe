@@ -35,7 +35,7 @@ const WindowNavigator = () => {
                     </Col>
                     <Col lg="4" md="4" xs="4" sm="4">
                     <div className="fa-cubes">
-                       <a className="fa-reservation" href="http://access.inwk.dal.ca">
+                       <a className="fa-reservation" target="_blank" href="http://access.inwk.dal.ca">
                             <GoCalendar style={{ marginTop:`10px`}} size={75}/>
                             <div className="font-1" style={{ marginTop:`10px`}}>Pod reservation</div>
                         </a>

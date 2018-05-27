@@ -15,7 +15,6 @@ class PodList extends Component {
     }
 
     renderPods(podDevices, podName) {
-        console.log(podDevices, podName)
         const { history } = this.props
 
         return (<Pod key={podName} podDevices={podDevices} podName={podName} history={history} />)

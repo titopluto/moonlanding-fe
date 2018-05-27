@@ -7,6 +7,7 @@ import { docPdfReducer,
         labPdfReducer, activeLabPdfReducer} from "./reducer_pdfs"
 import initState from "../data/initialState"
 import deviceReducer from "./reducer_device";
+import carouselReducer from "./reducer_carousel";
 
 const appReducer = combineReducers(
     {
@@ -15,6 +16,7 @@ const appReducer = combineReducers(
         doc_pdfs : docPdfReducer,
         lab_pdfs: labPdfReducer,
         active_lab_pdf: activeLabPdfReducer,
+        carousel : carouselReducer,
         auth: authReducer,
         form: formReducer
     }

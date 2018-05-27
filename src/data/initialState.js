@@ -9,6 +9,7 @@ const initialState = {
     device_pods : {
       devices : []
     },
+    carousel : [],
     lab_pdfs,
     active_lab_pdf,
     auth

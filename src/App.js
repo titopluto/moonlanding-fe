@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 
 import PodList from "./components/containers/PodList"
-import Carousel from "./components/ui/Carousel"
+import Carousel from "./components/containers/Carousel"
 import DocPdfList from "./components/containers/DocPdfList"
 import LabPdfList from "./components/containers/LabPdfList"
 import Login from "./components/ui/auth/Login"
