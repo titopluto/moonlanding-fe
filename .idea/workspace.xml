@@ -408,7 +408,7 @@
       <workItem from="1526575621879" duration="1022000" />
       <workItem from="1526781765976" duration="632000" />
       <workItem from="1526828364011" duration="3484000" />
-      <workItem from="1527183012836" duration="4524000" />
+      <workItem from="1527183012836" duration="4584000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -431,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526530569735</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="End wiring done for carousel">
+      <created>1527454504297</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527454504297</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34717000" />
+    <option name="totallyTimeSpent" value="34777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,7 +488,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Styling, doc pdf end point wiring" />
     <MESSAGE value="End wiring done for devices, Style changes done for the pod devices, documents" />
-    <option name="LAST_COMMIT_MESSAGE" value="End wiring done for devices, Style changes done for the pod devices, documents" />
+    <MESSAGE value="End wiring done for carousel" />
+    <option name="LAST_COMMIT_MESSAGE" value="End wiring done for carousel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
