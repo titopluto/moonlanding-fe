@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" afterPath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/iconStyles.css" afterPath="$PROJECT_DIR$/src/static/css/iconStyles.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/pdfStyles.css" afterPath="$PROJECT_DIR$/src/static/css/pdfStyles.css" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/podStyles.css" afterPath="$PROJECT_DIR$/src/static/css/podStyles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -137,7 +133,7 @@
       <file leaf-file-name="pdfStyles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/static/css/pdfStyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="-2312">
               <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
               <folding />
             </state>
@@ -481,7 +477,7 @@
       <workItem from="1526828364011" duration="3484000" />
       <workItem from="1527183012836" duration="4742000" />
       <workItem from="1527641495535" duration="3052000" />
-      <workItem from="1528228157583" duration="9000" />
+      <workItem from="1528228157583" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -525,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527454668218</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final code commits">
+      <created>1528228247043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528228247044</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37996000" />
+    <option name="totallyTimeSpent" value="38070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,7 +579,8 @@
     <MESSAGE value="Styling, doc pdf end point wiring" />
     <MESSAGE value="End wiring done for devices, Style changes done for the pod devices, documents" />
     <MESSAGE value="End wiring done for carousel" />
-    <option name="LAST_COMMIT_MESSAGE" value="End wiring done for carousel" />
+    <MESSAGE value="Final code commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final code commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -997,7 +1001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/css/pdfStyles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="-2312">
           <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding />
         </state>
