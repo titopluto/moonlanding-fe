@@ -16,13 +16,13 @@
     transform: scale(1.2);
     -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}  
+}
 .fa-cubes:active {
     color:darkgoldenrod;
     transition: 0.5s;
 }
-.fa-pods{
-	color :#00B3AC;
+.fa-pods,.fa-docs,.fa-reservation{
+	color :#B8860B;
 }
 .fa-pods:hover,.fa-docs:hover,.fa-reservation:hover{
     text-decoration: none;
@@ -31,15 +31,7 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.fa-docs{
-	color: #DC611E;
-}
-.fa-labs{
-	color: #764E8D;
-}
-.fa-reservation{
-	color:#3994E2;
-}
+
 .font-1{
     font-size: 17px;
 }

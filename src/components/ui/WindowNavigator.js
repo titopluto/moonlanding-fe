@@ -3,10 +3,10 @@ import { Container, Row, Col} from 'reactstrap';
 import { NavLink } from 'react-router-dom'
 import "../../static/css/NavigatorStyle.css"
 import "../../static/css/iconStyles.css"
-import { FaCubes, FaBook, FaFileTextO, FaServer, FaStackOverflow} from "react-icons/lib/fa/"
+import { FaList} from "react-icons/lib/fa/"
 import { MdPermContactCalendar } from "react-icons/lib/md/";
 import { IoDocumentText, IoCalendar } from 'react-icons/lib/io/';
-import { GoCalendar, GoPlug} from 'react-icons/lib/go/'
+import { GoCalendar} from 'react-icons/lib/go/'
 
 const WindowNavigator = () => {
     return(
@@ -18,7 +18,7 @@ const WindowNavigator = () => {
                     <div  className="fa-cubes">
 
                         <NavLink className="fa-pods" to="/pods">
-                            <GoPlug style={{ marginTop:`10px`}} size={75}/>
+                            <FaList style={{ marginTop:`10px`}} size={75}/>
                             <div className="font-1" style={{ marginTop:`10px`}}>Pod Access</div>
                         </NavLink>
 
