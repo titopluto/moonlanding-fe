@@ -256,7 +256,7 @@ export const forgotPassword = ({email}) => {
           dispatch({type: "CHANGE_PASSWORD", payload: devices})
         })
         .catch(error => {
-          console.error(error, "Failed to change password")
+          console.error(error, "Reset Link send failed")
         })
     }
 }
