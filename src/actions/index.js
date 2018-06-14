@@ -9,6 +9,11 @@ const get_headers = () => {
     return { headers : {'Authorization' : 'Bearer ' + token }}
 }
 
+const add_post_header = (headers) =>{
+    headers['Content-Type'] = "application/json"
+    return headers
+}
+
 const token_issue = (error) => {
     if (error.response.status == 401){
         return true
@@ -108,6 +113,26 @@ export const authError = error => {
     })
 }
 
+export const fetchCarouselContent = () => {
+    return (dispatch) => {
+        axios.get(`${TEMP_URL}/carouselcontent`, get_headers())
+            .then(pods => {
+                dispatch({type: "RECEIVE_CAROUSEL_CONTENT", payload: pods.data})
+            })
+            .catch(error => {
+                console.error({error}, "Failed to fetch carousel")
+                if(token_issue(error)){
+                    dispatch({ type: C.UNAUTH_USER})
+                }
+                // TODO:: Remove this dispatch and throw error after fixing CORS
+                /*dispatch({type: "RECEIVE_PODS", payload: [{
+                        "id": 1,
+                        "name": "Pod 1"
+                    }]})*/
+            })
+    }
+}
+
 export const fetchPods = () => {
     return (dispatch) => {
         axios.get(`${TEMP_URL}/pods`, get_headers())
@@ -128,6 +153,7 @@ export const fetchPods = () => {
     }
 }
 
+
 export const fetchDocs = () => {
     return (dispatch) => {
         axios.get(`${TEMP_URL}/documents`, get_headers())
@@ -139,6 +165,11 @@ export const fetchDocs = () => {
                 if(token_issue(error)){
                     dispatch({ type: C.UNAUTH_USER})
                 }
+                // TODO:: Remove this dispatch and throw error after fixing CORS
+                /*dispatch({type: "RECEIVE_PODS", payload: [{
+                        "id": 1,
+                        "name": "Pod 1"
+                    }]})*/
             })
     }
 }
@@ -156,25 +187,29 @@ export const fetchCourses = () => {
                 if(token_issue(error)){
                     dispatch({ type: C.UNAUTH_USER})
                 }
+                // TODO:: Remove this dispatch and throw error after fixing CORS
+                /*dispatch({type: "RECEIVE_PODS", payload: [{
+                        "id": 1,
+                        "name": "Pod 1"
+                    }]})*/
             })
     }
 }
+
 
 export const fetchDevices = (podId) => {
   return (dispatch) => {
     axios.get(`${TEMP_URL}/pods/${podId}/`, get_headers())
       .then(({data: devices}) => {
         dispatch({type: "RECEIVE_DEVICES", payload: devices})
-
-        /*                dispatch({type: "RECEIVE_COURSES", payload: documents.data})
-        */            })
+    })
       .catch(error => {
         console.error(error, "Failed to fetch devices")
       })
   }
 }
+
 export const fetchCarousel = () => {
-  console.log("hhhggygyg")
   return (dispatch) => {
     axios.get(`${TEMP_URL}/carouselcontent`, get_headers())
       .then(({data: carousel}) => {
@@ -186,4 +221,42 @@ export const fetchCarousel = () => {
         console.error(error, "Failed to fetch carousel")
       })
   }
+}
+
+export const changePassword = ({old_password, new_password}) => {
+    console.log(old_password)
+    console.log(new_password)
+    return (dispatch) => {
+      axios.put(`${TEMP_URL}/password/`, {old_password, new_password}, add_post_header(get_headers()))
+        .then(({data: devices}) => {
+          dispatch({type: "CHANGE_PASSWORD", payload: devices})
+        })
+        .catch(error => {
+          console.error(error, "Failed to change password")
+        })
+    }
+}
+
+export const resetPassword = ({password, token}) => {
+    return (dispatch) => {
+      axios.post(`${TEMP_URL}/passwordreset/`, {password, token}, add_post_header({}))
+        .then(({data: devices}) => {
+          dispatch({type: "CHANGE_PASSWORD", payload: devices})
+        })
+        .catch(error => {
+          console.error(error, "Failed to reset password")
+        })
+    }
+}
+
+export const forgotPassword = ({email}) => {
+    return (dispatch) => {
+      axios.post(`${TEMP_URL}/passwordresetemail/`, {email}, add_post_header({}))
+        .then(({data: devices}) => {
+          dispatch({type: "CHANGE_PASSWORD", payload: devices})
+        })
+        .catch(error => {
+          console.error(error, "Failed to change password")
+        })
+    }
 }

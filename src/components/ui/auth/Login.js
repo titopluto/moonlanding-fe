@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import { Field, reduxForm } from "redux-form"
 import { loginUser } from "../../../actions"
-
+import { NavLink, Link } from 'react-router-dom'
 import "../../../static/css/loginStyles.css"
 
 class Login extends Component {
@@ -77,6 +77,9 @@ class Login extends Component {
 
                             <button type="submit" className="btn btn-warning"> Access </button>
                         </form>
+                        <NavLink className="fa-docs" to="/forgotPassword">
+                            Forgot Password
+                        </NavLink>
                     </div>
                 </div>
             </div>
