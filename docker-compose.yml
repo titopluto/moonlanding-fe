@@ -5,6 +5,6 @@ services:
     build: .
     command: serve -s build
     ports:
-      - "5000"
+      - "5000:5000"
 
 
