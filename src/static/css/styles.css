@@ -186,7 +186,7 @@ body {
 
 .window  {
     background: black;
-    height: 512px;
+    height: auto;
     position: relative;
 
 }
@@ -197,7 +197,7 @@ body {
 /*flex div*/
 
 .flex-div {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 

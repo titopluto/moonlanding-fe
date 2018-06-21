@@ -22,11 +22,11 @@
     transition: 0.5s;
 }
 .fa-pods,.fa-docs,.fa-reservation{
-	color :#B8860B;
+	color :#00b4ad;
 }
 .fa-pods:hover,.fa-docs:hover,.fa-reservation:hover{
     text-decoration: none;
-    color : #e8e8e8;
+    color : black;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

@@ -10,18 +10,32 @@ import Footer from "./Footer"
 const DefaultLayout = ({component: Component, ...rest}) => {
   return (
     <Route {...rest} render={matchProps => {
-        return(
-      <div>
-          <Navigation/>
-          <div className="home-section">
-              <Component {...matchProps} />
-              <WindowNavigator/>
-              <PageContent/>
-              <Collaboration/>
-              <Footer/>
-          </div>
-      </div>
-    )}} />
+        if(matchProps.match.path=="/"){
+          return(
+            <div>
+                <Navigation/>
+                <div className="home-section">
+                    <Component {...matchProps} />
+                    <WindowNavigator/>
+                    <PageContent/>
+                    <Collaboration/>
+                    <Footer/>
+                </div>
+            </div>
+          )}
+        else{
+          return(
+            <div>
+                <Navigation/>
+                <div className="home-section">
+                    <Component {...matchProps} />
+                    <WindowNavigator/>
+                    <Collaboration/>
+                    <Footer/>
+                </div>
+            </div>
+          )}
+        }} />
   )
 };
 

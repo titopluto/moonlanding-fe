@@ -27,7 +27,7 @@ class DeviceList extends React.Component{
       const routers = _.filter(formattedDevices, {"type":"ROUTER"} )
       const switches = _.filter(formattedDevices, {"type":"SWITCH"} )
       const accessPoints = _.filter(formattedDevices, {"type":"ACCESS_POINT"} )
-      const termServers = _.filter(formattedDevices, {"type":"Terminal Server"} )
+      const termServers = _.filter(formattedDevices, {"type":"TS"} )
 
       return (
 
@@ -43,7 +43,7 @@ class DeviceList extends React.Component{
               transitionLeave={false}
             >
 
-              <div className="device-heading d-flex justify-content-center flex-div">
+              <div className="device-heading d-flex flex-div">
                 <div className="back-arrow p-2">
                   <Link to="/pods" className="ti-back-arrow"> <TiArrowLeftThick size={70}/> </Link>
                 </div>
@@ -52,7 +52,6 @@ class DeviceList extends React.Component{
                 </div>
 
               </div>
-
 
               <div className="device-container">
                 <div className="d-flex justify-content-center">

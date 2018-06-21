@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Tooltip } from "reactstrap"
 import routerImg from "../../static/img/router.jpg"
+import { Card, CardTitle, CardText, Button } from 'reactstrap';
 
 
 class Device extends Component {
@@ -25,36 +26,40 @@ class Device extends Component {
         const model = obj.model
 
         if (type==="router") {
-            return (<div className="device-row">
-                        <a className="router" href={url} id={name} > {name} </a>
-                        <Tooltip placement="top center" isOpen={this.state.tooltipOpen} target={name} toggle={this.toggle}>
-                            { `${model} Router`}
-                        </Tooltip>
-                    </div>
+            return (<div className="">
+            <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
+        <CardTitle id={name}>{name}</CardTitle>
+        <CardText>{ `${model} Router`}</CardText>
+        <Button  href={url} id={name} color="secondary">Connect</Button>
+                </Card>
+            </div>
             )
         } else if(type==="switch") {
-            return (<div className="device-row">
-                        <a className="switch" href={url} id={name} > {name} </a>
-                        <Tooltip placement="top center" isOpen={this.state.tooltipOpen} target={name} toggle={this.toggle}>
-                            { `${model} Switch`}
-                        </Tooltip>
+            return (<div className="">
+            <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
+        <CardTitle id={name}>{name}</CardTitle>
+        <CardText>{ `${model} Switch`}</CardText>
+        <Button  href={url} id={name} color="secondary">Connect</Button>
+                </Card>
                     </div>
             )
         }
           else if(type==="ap") {
-            return (<div className="device-row-ap">
-                        <a className="ap" href={url} id={name} > {name} </a>
-                        <Tooltip placement="top center" isOpen={this.state.tooltipOpen} target={name} toggle={this.toggle}>
-                            { `${model} Access Point`}
-                        </Tooltip>
+            return (<div className="">
+                <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
+        <CardTitle id={name}>{name}</CardTitle>
+        <CardText>{ `${model} Access Points`}</CardText>
+        <Button  href={url} id={name} color="secondary">Connect</Button>
+                </Card>
                     </div>
             )
         } else if(type==="ts") {
-            return (<div className="device-row">
-                        <a className="router" href={url} id={name} > {name} </a>
-                        <Tooltip placement="top center" isOpen={this.state.tooltipOpen} target={name} toggle={this.toggle}>
-                            {`Terminal Server`}
-                        </Tooltip>
+            return (<div className="">
+                    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
+        <CardTitle id={name}>{name}</CardTitle>
+        <CardText>{ `${model} Terminal Server`}</CardText>
+        <Button  href={url} id={name} color="secondary">Connect</Button>
+                </Card>
                     </div>
             )
         } else {

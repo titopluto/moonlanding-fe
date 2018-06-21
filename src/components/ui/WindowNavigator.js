@@ -18,7 +18,7 @@ const WindowNavigator = () => {
                     <div  className="fa-cubes">
 
                         <NavLink className="fa-pods" to="/pods">
-                            <FaList style={{ marginTop:`10px`}} size={75}/>
+                            <FaList class="hello" style={{ marginTop:`10px`,borderColor:'black'}} size={75}/>
                             <div className="font-1" style={{ marginTop:`10px`}}>Pod Access</div>
                         </NavLink>
 

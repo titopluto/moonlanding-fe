@@ -12,13 +12,10 @@
 }
 
 .pod {
-    /*flex-basis: 30px !important;*/
-    /*min-width:10px;*/
     height: 220px !important;
     background-color: #434343;
     color:black;
     font-weight: bold;
-    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
     font-family: "Nunito-Regular";
     font-weight: bold;
     transition: 0.5s;
@@ -49,7 +46,6 @@
     transition: 1s;
     text-align: center;
     text-decoration: none;
-    transform: translateY(-15px);
     background: none;
 
 

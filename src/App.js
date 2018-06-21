@@ -9,6 +9,7 @@ import LabPdfList from "./components/containers/LabPdfList"
 import Login from "./components/ui/auth/Login"
 import NoMatch from "./components/ui/NoMatch"
 import PrivateRouteLayout from "./components/ui/auth/PrivateRouteLayout"
+import PageContent from "./components/ui/PageContent"
 
 
 const App = ({history}) => (
@@ -17,6 +18,7 @@ const App = ({history}) => (
 
                 <Switch>
                     <PrivateRouteLayout exact path="/" component={Carousel}/>
+                    <PrivateRouteLayout exact path="/" component={PageContent}/>
                     <PrivateRouteLayout  path="/pods" component={PodList}/>
                     <PrivateRouteLayout  path="/docs" component={DocPdfList}/>
                     <PrivateRouteLayout  path="/lab-docs" component={LabPdfList}/>
