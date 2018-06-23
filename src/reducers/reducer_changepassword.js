@@ -6,5 +6,5 @@ const reducerChangePassword = (state={}, action) => {
         return state
     }
 }
-  
-export default reducerChangePassword;  
+
+export default reducerChangePassword;

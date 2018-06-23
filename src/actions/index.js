@@ -223,13 +223,14 @@ export const fetchCarousel = () => {
   }
 }
 
-export const changePassword = ({old_password, new_password}) => {
+export const changePassword = ({old_password, new_password},history) => {
     console.log(old_password)
     console.log(new_password)
     return (dispatch) => {
       axios.put(`${TEMP_URL}/password/`, {old_password, new_password}, add_post_header(get_headers()))
         .then(({data: devices}) => {
           dispatch({type: "CHANGE_PASSWORD", payload: devices})
+          history.push("/auth")
         })
         .catch(error => {
           console.error(error, "Failed to change password")
@@ -237,11 +238,12 @@ export const changePassword = ({old_password, new_password}) => {
     }
 }
 
-export const resetPassword = ({password, token}) => {
+export const resetPassword = ({password, token},history) => {
     return (dispatch) => {
       axios.post(`${TEMP_URL}/passwordreset/`, {password, token}, add_post_header({}))
         .then(({data: devices}) => {
           dispatch({type: "CHANGE_PASSWORD", payload: devices})
+          history.push("/auth")
         })
         .catch(error => {
           console.error(error, "Failed to reset password")
@@ -253,7 +255,7 @@ export const forgotPassword = ({email}) => {
     return (dispatch) => {
       axios.post(`${TEMP_URL}/passwordresetemail/`, {email}, add_post_header({}))
         .then(({data: devices}) => {
-          dispatch({type: "CHANGE_PASSWORD", payload: devices})
+          dispatch({type: "FORGOT_PASSWORD", payload: devices})
         })
         .catch(error => {
           console.error(error, "Reset Link send failed")

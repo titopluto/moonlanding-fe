@@ -1,10 +1,10 @@
-const reducerForgotPassword = (state={}, action) => {
+const reducerForgotPassword = (state=false, action) => {
     switch(action.type) {
       case "FORGOT_PASSWORD":
-        return action.payload
+        return true
       default:
-        return state
+        return false
     }
 }
-  
-export default reducerForgotPassword;  
+
+export default reducerForgotPassword;

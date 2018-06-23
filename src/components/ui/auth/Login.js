@@ -75,12 +75,12 @@ class Login extends Component {
 
                             />
 
-                            <button type="submit" className="btn btn-warning"> Access </button>
+                            <button type="submit" className="btn btn-warning btn-font"> Access </button>
                         </form>
-                        <NavLink className="fa-docs" to="/forgotPassword">
-                            Forgot Password
-                        </NavLink>
                     </div>
+                      <NavLink className="row password-link" to="/forgotPassword">
+                        Forgot Password
+                      </NavLink>
                 </div>
             </div>
             </section>

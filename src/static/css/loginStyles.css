@@ -37,11 +37,11 @@
 
 .login-section .error {
     color: darkred;
-    font-family: Nunito-Regular;
+    font-family: "Arial";
 }
 
 .login-section input {
-    font-family: 'Nunito-Regular';
+    font-family: 'Arial';
     color: darkgoldenrod;
 }
 
@@ -52,3 +52,13 @@
   display: flex;
   align-items: center;
 }
+
+.password-link{
+  font-family: Roboto;
+  font-size: 1em;
+  margin-left: 10em;
+  margin-top: 5px;
+  justify-content: center !important;
+}
+
+

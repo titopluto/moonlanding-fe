@@ -8,6 +8,7 @@ import { docPdfReducer,
 import initState from "../data/initialState"
 import deviceReducer from "./reducer_device";
 import carouselReducer from "./reducer_carousel";
+import reducerForgotPassword from "./reducer_forgotpassword";
 
 const appReducer = combineReducers(
     {
@@ -18,6 +19,7 @@ const appReducer = combineReducers(
         active_lab_pdf: activeLabPdfReducer,
         carousel : carouselReducer,
         auth: authReducer,
+        emailStatus : reducerForgotPassword,
         form: formReducer
     }
 )

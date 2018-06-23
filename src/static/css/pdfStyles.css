@@ -1,8 +1,7 @@
 /*PDF component */
 
 .pdf-wrapper {
-    /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../../static/img/pattern2.jpg");*/
-    background: url("../img/image_pod.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../../static/img/pattern3.jpg");
 
 }
 
@@ -10,9 +9,13 @@
     min-height: 500px;
 }
 
-.list-group-item{
-  background:none;
-  color: white;
+.list-group-item:hover{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
 }
 .pdf-wrapper .list-group-item:focus {
     background-color: firebrick;
