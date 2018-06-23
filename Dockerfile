@@ -5,14 +5,14 @@ FROM node
 # Labels for the image
 LABEL organization="INWK-DAL"
 LABEL maintainer="Tito"
-LABEL description="React Application for VIRL"
+LABEL description="React Application for moonlight"
 
 # The base node image sets a very verbose log level.
 ENV NPM_CONFIG_LOGLEVEL warn
 
 
 # Change working directory
-WORKDIR /react-app
+WORKDIR /react-moonlight
 
 # Copy all local files into the image.
 COPY . . 
@@ -32,4 +32,3 @@ RUN npm install -g serve
 
 # Set the command to start the node server.
 CMD serve -s build
-
