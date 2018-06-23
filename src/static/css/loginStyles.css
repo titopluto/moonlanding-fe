@@ -56,9 +56,16 @@
 .password-link{
   font-family: Roboto;
   font-size: 1em;
-  margin-left: 10em;
   margin-top: 5px;
   justify-content: center !important;
 }
-
+.forgot-password{
+  color: #0056b3;
+  float: right;
+  font-family: Roboto;
+  font-size: 1em;
+  margin-top: 5px;  text-align: right;
+  position: relative;
+  right: 375px;
+}
 

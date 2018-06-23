@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Field, InputError, reduxForm } from "redux-form";
 import mail from "../../static/img/mail21.gif";
-import tick from "../../static/img/tick.gif";
+import tick from "../../static/img/tick.png";
 import "../../static/css/ForgotPasswordStyles.css"
 import { Button} from 'reactstrap';
 import {Helmet} from 'react-helmet';

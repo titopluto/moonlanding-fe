@@ -65,22 +65,22 @@ class Login extends Component {
                                    component={this.renderField}
                                    validate={this.required}
                             />
-
                             <Field name="password"
                                    label="password"
                                    type="password"
                                    placeholder="password"
                                    component={this.renderField}
                                    validate={this.required}
-
                             />
 
                             <button type="submit" className="btn btn-warning btn-font"> Access </button>
                         </form>
                     </div>
-                      <NavLink className="row password-link" to="/forgotPassword">
+                    <div class="forgot-password">
+                      <NavLink className="forgot-password" to="/forgotPassword">
                         Forgot Password
                       </NavLink>
+                    </div>
                 </div>
             </div>
             </section>
