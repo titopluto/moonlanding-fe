@@ -67,7 +67,7 @@ class ChangePassword extends Component {
             <div className="font-type" className="image-height">
               <img className="" src={tick} width="315" height="300" alt=""/>
             </div>
-            <h3>Password changed Successfully</h3>
+            <h3>Password changed Success</h3>
             <Link to="/auth"><span>Link to follow</span></Link>
           </div>
         )
