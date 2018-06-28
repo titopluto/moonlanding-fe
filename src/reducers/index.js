@@ -9,6 +9,8 @@ import initState from "../data/initialState"
 import deviceReducer from "./reducer_device";
 import carouselReducer from "./reducer_carousel";
 import reducerForgotPassword from "./reducer_forgotpassword";
+import reducerChangePassword from "./reducer_changepassword";
+
 
 const appReducer = combineReducers(
     {
@@ -20,7 +22,8 @@ const appReducer = combineReducers(
         carousel : carouselReducer,
         auth: authReducer,
         emailStatus : reducerForgotPassword,
-        form: formReducer
+        form: formReducer,
+        resetStatus : reducerChangePassword
     }
 )
 

@@ -5,7 +5,8 @@ const Constants = {
     UNAUTH_USER: "UNAUTH_USER",
     AUTH_ERROR: "AUTH_ERROR",
     CLEAR_AUTH_ERROR: "CLEAR_AUTH_ERROR",
-    LOGOUT_USER: "LOGOUT_USER"
+    LOGOUT_USER: "LOGOUT_USER",
+    PAGE_ERROR : "PAGE_ERROR"
 }
 
 export default Constants

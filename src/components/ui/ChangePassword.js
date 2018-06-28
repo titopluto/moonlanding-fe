@@ -1,22 +1,21 @@
 import React, { Component } from "react";
 import { Field, InputError, reduxForm } from "redux-form"
+import { Link } from 'react-router-dom'
+
 import lock from "../../static/img/save.gif";
+import tick from "../../static/img/mail11.gif";
 import {Helmet} from 'react-helmet';
 import passwordValidator from 'password-validator';
 import "../../static/css/ChangePasswordStyles.css"
 import { Button} from 'reactstrap';
+import Navigation from "../containers/Navigation"
 
 
 const schema = new passwordValidator();
 
 schema
-  .is().min(8)                                    // Minimum length 8
-  .is().max(20)                                  // Maximum length 100
-  .has().uppercase()                              // Must have uppercase letters
-  .has().lowercase()                              // Must have lowercase letters
-  .has().digits()                                 // Must have digits
+  .is().min(4)                                    // Minimum length 8
   .has().not().spaces()                           // Should not have spaces
-  .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
 
 class ChangePassword extends Component {
 
@@ -54,40 +53,62 @@ class ChangePassword extends Component {
     }
 
     render() {
-        return (
-            <div className="text-center page-font-confirm">
-              <Helmet>
-                <style>{'body { background-color: #53C0BC; }'}</style>
-              </Helmet>
-              <img className="" src={lock} width="350" height="270" alt=""/>
-
-              <form className="" onSubmit={this.handleFormSubmit}>
-                <div>
-                  <label>
-                    Current Password:
-                    <input className="input-current" type="password" value={this.state.old_password} onChange={this.oldPasswordChange}/>
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    New Password:
-                    <input className="input-new" type="password" value={this.state.new_password} onChange={this.newPasswordChange}></input>
-                  </label>
-                </div>
-                <div>
-                  <label>
-                    Confirm Password:
-                    <input className="input-confirm" type="password" value={this.state.confirm_password}  onChange={this.confirmPasswordChange}></input>
-                  </label>
-                </div>
-                <div className="wellStyles">
-                  <Button className="button-color" bsStyle="danger" bsSize="large" block >
-                    Change Password
-                  </Button>
-                </div>
-                </form>
+      if(this.props.isError==="error"){
+        return <div>
+          Hi there
+        </div>
+      }
+      else if(this.props.status){
+        return(
+          <div className="text-center message-page-font">
+            <Helmet>
+              <style>{'body { background-color: #53C0BC; }'}</style>
+            </Helmet>
+            <div className="font-type" className="image-height">
+              <img className="" src={tick} width="315" height="300" alt=""/>
             </div>
+            <h3>Password changed Successfully</h3>
+            <Link to="/auth"><span>Link to follow</span></Link>
+          </div>
         )
+      }
+      else{
+        return (
+          <div className="text-center page-font-confirm">
+            <Helmet>
+              <style>{'body { background-color: #53C0BC; }'}</style>
+            </Helmet>
+            <img className="" src={lock} width="350" height="270" alt=""/>
+
+            <form className="" onSubmit={this.handleFormSubmit}>
+              <div>
+                <label>
+                  Current Password:
+                  <input className="input-current" type="password" value={this.state.old_password} onChange={this.oldPasswordChange}/>
+                </label>
+              </div>
+              <div>
+                <label>
+                  New Password:
+                  <input className="input-new" type="password" value={this.state.new_password} onChange={this.newPasswordChange}></input>
+                </label>
+              </div>
+              <div>
+                <label>
+                  Confirm Password:
+                  <input className="input-confirm" type="password" value={this.state.confirm_password}  onChange={this.confirmPasswordChange}></input>
+                </label>
+              </div>
+              <div className="wellStyles">
+                <Button className="button-color" bsStyle="danger" bsSize="large" block >
+                  Change Password
+                </Button>
+              </div>
+            </form>
+          </div>
+        )
+      }
+
     }
 }
 

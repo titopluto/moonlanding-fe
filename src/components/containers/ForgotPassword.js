@@ -4,7 +4,8 @@ import {forgotPassword} from "../../actions";
 
 const mapStateToProps = (state) =>{
     return ({
-      status : state.emailStatus
+      status : state.emailStatus.forgetState,
+      isError :state.emailStatus.status
     })
 }
 

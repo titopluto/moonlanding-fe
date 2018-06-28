@@ -3,7 +3,10 @@ import ResetPassword from "../ui/ResetPassword"
 import {resetPassword} from "../../actions";
 
 const mapStateToProps = (state) =>{
-    return ({})
+    return ({
+      status : state.resetStatus.resetState,
+      isError :state.resetStatus.status
+    })
 }
 
 export default connect(mapStateToProps, {resetPassword})(ResetPassword)

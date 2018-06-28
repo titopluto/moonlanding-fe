@@ -1,22 +1,20 @@
 import React, { Component } from "react";
 import {InputError} from "redux-form"
+import { Link } from 'react-router-dom'
 import "../../static/css/newPassword.css"
 import lock from "../../static/img/lock2.gif";
+import tick from "../../static/img/mail11.gif";
 import { Button} from 'reactstrap';
 import {Helmet} from 'react-helmet';
 import passwordValidator from 'password-validator';
+import Navigation from "../containers/Navigation"
 
 
 const schema = new passwordValidator();
 
 schema
-  .is().min(8)                                    // Minimum length 8
-  .is().max(20)                                  // Maximum length 100
-  .has().uppercase()                              // Must have uppercase letters
-  .has().lowercase()                              // Must have lowercase letters
-  .has().digits()                                 // Must have digits
+  .is().min(4)                                    // Minimum length 8
   .has().not().spaces()                           // Should not have spaces
-  .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
 
 class ResetPassword extends Component {
 
@@ -52,7 +50,29 @@ class ResetPassword extends Component {
     }
 
     render() {
+      if(this.props.isError==="error"){
+        return <div>
+          Hi there
+        </div>
+      }
+      else if(this.props.status){
+        return(
+          <div className="text-center message-page-font">
+            <Helmet>
+              <style>{'body { background-color: #fff; }'}</style>
+            </Helmet>
+            <div className="font-type" className="image-height">
+              <img className="" src={tick} width="315" height="300" alt=""/>
+            </div>
+            <h3>Password changed successfully!! </h3>
+            <Link to="/auth"><span>Link to follow</span></Link>
+          </div>
+        )
+      }
+      else{
         return (
+          <div>
+            <Navigation/>
             <div className="text-center page-font1">
               <Helmet>
                 <style>{'body { background-color: #009BAD; }'}</style>
@@ -60,26 +80,28 @@ class ResetPassword extends Component {
               <img className="icon-height" src={lock} width="350" height="250" alt=""/>
               {this.state.error ? <div>{this.state.error}</div> : null}
               <form className="" onSubmit={this.handleFormSubmit}>
-                  <div>
+                <div>
                   <label>
-                        New Password:
-                        <input className="input-new" type="password" value={this.state.password} onChange={this.passwordChange}/>
-                    </label>
-                  </div>
-                  <div>
+                    New Password:
+                    <input className="input-new" type="password" value={this.state.password} onChange={this.passwordChange}/>
+                  </label>
+                </div>
+                <div>
                   <label>
-                        Confirm Password:
-                        <input className="input-confirm" type="password" value={this.state.confirm_password}  onChange={this.confirmPasswordChange}></input>
-                    </label>
-                  </div>
-                  <div className="wellStyles">
-                    <Button className="button-color" bsStyle="danger" bsSize="large" block >
-                      Change Password
-                    </Button>
-                  </div>
-                </form>
+                    Confirm Password:
+                    <input className="input-confirm" type="password" value={this.state.confirm_password}  onChange={this.confirmPasswordChange}></input>
+                  </label>
+                </div>
+                <div className="wellStyles">
+                  <Button className="button-color" bsStyle="danger" bsSize="large" block >
+                    Change Password
+                  </Button>
+                </div>
+              </form>
             </div>
+          </div>
         )
+      }
     }
 }
 

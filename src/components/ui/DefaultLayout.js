@@ -10,7 +10,6 @@ import Footer from "./Footer"
 const DefaultLayout = ({component: Component, ...rest}) => {
   return (
     <Route {...rest} render={matchProps => {
-      console.log(matchProps,"lhfldsjghlh")
         if(matchProps.match.path=="/"){
           return(
             <div>
@@ -28,6 +27,7 @@ const DefaultLayout = ({component: Component, ...rest}) => {
 
           return(
             <div>
+              <Navigation/>
               <div className="home-section">
                 <Component {...matchProps} />
               </div>

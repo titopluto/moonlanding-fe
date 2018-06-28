@@ -1,7 +1,14 @@
-const reducerChangePassword = (state={}, action) => {
+const reducerChangePassword = (state={resetState :false, status:"loaded"}, action) => {
     switch(action.type) {
       case "CHANGE_PASSWORD":
-        return action.payload
+        return {
+          resetState :true
+        }
+      case "PASSWORD_ERROR":
+        return {
+          status:"error",
+          resetState : false
+        }
       default:
         return state
     }

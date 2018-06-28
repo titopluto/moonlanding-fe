@@ -22,6 +22,7 @@ const token_issue = (error) => {
     }
 }
 
+
 export const activeDocPdf = (filename) => {
     return (dispatch) => {
         dispatch({
@@ -113,24 +114,11 @@ export const authError = error => {
     })
 }
 
-export const fetchCarouselContent = () => {
-    return (dispatch) => {
-        axios.get(`${TEMP_URL}/carouselcontent`, get_headers())
-            .then(pods => {
-                dispatch({type: "RECEIVE_CAROUSEL_CONTENT", payload: pods.data})
-            })
-            .catch(error => {
-                console.error({error}, "Failed to fetch carousel")
-                if(token_issue(error)){
-                    dispatch({ type: C.UNAUTH_USER})
-                }
-                // TODO:: Remove this dispatch and throw error after fixing CORS
-                /*dispatch({type: "RECEIVE_PODS", payload: [{
-                        "id": 1,
-                        "name": "Pod 1"
-                    }]})*/
-            })
-    }
+export const pageError = error => {
+    return ({
+        type : C.PAGE_ERROR,
+        payload: error
+    })
 }
 
 export const fetchPods = () => {
@@ -214,9 +202,7 @@ export const fetchCarousel = () => {
     axios.get(`${TEMP_URL}/carouselcontent`, get_headers())
       .then(({data: carousel}) => {
         dispatch({type: "RECEIVE_CAROUSEL", payload: carousel})
-
-        /*                dispatch({type: "RECEIVE_COURSES", payload: documents.data})
-        */            })
+      })
       .catch(error => {
         console.error(error, "Failed to fetch carousel")
       })
@@ -230,23 +216,23 @@ export const changePassword = ({old_password, new_password},history) => {
       axios.put(`${TEMP_URL}/password/`, {old_password, new_password}, add_post_header(get_headers()))
         .then(({data: devices}) => {
           dispatch({type: "CHANGE_PASSWORD", payload: devices})
-          history.push("/auth")
         })
         .catch(error => {
           console.error(error, "Failed to change password")
+          dispatch({type:"PASSWORD_ERROR"})
         })
     }
 }
 
-export const resetPassword = ({password, token},history) => {
+export const resetPassword = ({password, token}) => {
     return (dispatch) => {
       axios.post(`${TEMP_URL}/passwordreset/`, {password, token}, add_post_header({}))
         .then(({data: devices}) => {
           dispatch({type: "CHANGE_PASSWORD", payload: devices})
-          history.push("/auth")
         })
         .catch(error => {
-          console.error(error, "Failed to reset password")
+          console.error({error}, "Failed to fetch password")
+          dispatch({type:"PASSWORD_ERROR"})
         })
     }
 }
@@ -258,7 +244,8 @@ export const forgotPassword = ({email}) => {
           dispatch({type: "FORGOT_PASSWORD", payload: devices})
         })
         .catch(error => {
-          console.error(error, "Reset Link send failed")
+          console.error({error}, "Failed to fetch password")
+          dispatch({type:"FORGOT_ERROR"})
         })
     }
 }

@@ -3,6 +3,10 @@ import { Container, Row, Col} from 'reactstrap';
 import { NavLink } from 'react-router-dom'
 import "../../static/css/NavigatorStyle.css"
 import "../../static/css/iconStyles.css"
+import pod from "../../static/img/icon1.JPG";
+import doc from "../../static/img/icon2.JPG";
+import calendar from "../../static/img/icon3.JPG";
+
 import { FaList} from "react-icons/lib/fa/"
 import { MdPermContactCalendar } from "react-icons/lib/md/";
 import { IoDocumentText, IoCalendar } from 'react-icons/lib/io/';
@@ -14,32 +18,23 @@ const WindowNavigator = () => {
             <Container>
                 <Row className = "center">
                     <Col lg="4" md="4" xs="4" sm="4">
-
-                    <div  className="fa-cubes">
-
-                        <NavLink className="fa-pods" to="/pods">
-                            <FaList class="hello" style={{ marginTop:`10px`,borderColor:'black'}} size={75}/>
-                            <div className="font-1" style={{ marginTop:`10px`}}>Pod Access</div>
-                        </NavLink>
-
-                    </div>
+                      <NavLink className="fa-reservation" to="/pods">
+                        <img className="" src={pod} width="170" height="150" alt=""/>
+                        <div className="font-1" style={{ marginTop:`10px`}}>Pod Access</div>
+                      </NavLink>
                     </Col>
                     <Col lg="4" md="4" xs="4" sm="4">
-                        <div className="fa-cubes">
-                            <NavLink className="fa-docs" to="/docs">
-                                <IoDocumentText style={{ marginTop:`10px`}} size={75}/>
-                                <div className="font-1" style={{ marginTop:`10px`}}>Documents</div>
-                            </NavLink>
-
-                        </div>
+                       <NavLink className="fa-reservation" to="/docs">
+                         <img className="" src={doc} width="170" height="150" alt=""/>
+                         <div className="font-1" style={{ marginTop:`10px`}}>Documents</div>
+                       </NavLink>
                     </Col>
                     <Col lg="4" md="4" xs="4" sm="4">
-                    <div className="fa-cubes">
+                    <div className="">
                        <a className="fa-reservation" target="_blank" href="http://access.inwk.dal.ca">
-                            <GoCalendar style={{ marginTop:`10px`}} size={75}/>
-                            <div className="font-1" style={{ marginTop:`10px`}}>Pod reservation</div>
+                         <img className="" src={calendar} width="170" height="150" alt=""/>
+                         <div className="font-1" style={{ marginTop:`10px`}}>Pod reservation</div>
                         </a>
-
                     </div>
                     </Col>
                 </Row>
