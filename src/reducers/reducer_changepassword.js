@@ -9,6 +9,11 @@ const reducerChangePassword = (state={resetState :false, status:"loaded"}, actio
           status:"error",
           resetState : false
         }
+      case "OLD_PASSWORD":
+        return {
+          status :"old_password",
+          resetState :false
+        }
       default:
         return state
     }

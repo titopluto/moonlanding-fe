@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { Field, InputError, reduxForm } from "redux-form"
 import { Link } from 'react-router-dom'
-
 import lock from "../../static/img/save.gif";
 import tick from "../../static/img/mail11.gif";
 import {Helmet} from 'react-helmet';
 import passwordValidator from 'password-validator';
 import "../../static/css/ChangePasswordStyles.css"
 import { Button} from 'reactstrap';
-import Navigation from "../containers/Navigation"
+import Popup from "reactjs-popup";
 
 
 const schema = new passwordValidator();
@@ -16,6 +15,17 @@ const schema = new passwordValidator();
 schema
   .is().min(4)                                    // Minimum length 8
   .has().not().spaces()                           // Should not have spaces
+
+
+export const ModalPopup=()=>(
+<Popup
+  trigger={<button className="button"> Open Modal </button>}
+  modal
+  closeOnDocumentClick
+>
+  <span> Modal content </span>
+</Popup>
+);
 
 class ChangePassword extends Component {
 
@@ -31,7 +41,7 @@ class ChangePassword extends Component {
     handleFormSubmit(event) {
         const { history } = this.props
         event.preventDefault();
-        console.log(schema.validate(this.state.new_password),"gkuhdf;gh;fhghfs'")
+        console.log(schema.validate(this.state.new_password),"newpassword")
         if(this.state.new_password === this.state.confirm_password && schema.validate(this.state.new_password)){
           this.props.changePassword(this.state,history)
         }
@@ -53,10 +63,11 @@ class ChangePassword extends Component {
     }
 
     render() {
+      console.log(this.props,"whats coming in this props")
       if(this.props.isError==="error"){
-        return <div>
+        return (<div>
           Hi there
-        </div>
+        </div>)
       }
       else if(this.props.status){
         return(
@@ -71,6 +82,14 @@ class ChangePassword extends Component {
             <Link to="/auth"><span>Link to follow</span></Link>
           </div>
         )
+      }
+      else if(this.props.isError==="old_password"){
+        return(
+          <div>
+            <div><ModalPopup/></div>
+        </div>
+        )
+
       }
       else{
         return (

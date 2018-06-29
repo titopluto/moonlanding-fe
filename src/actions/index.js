@@ -218,8 +218,16 @@ export const changePassword = ({old_password, new_password},history) => {
           dispatch({type: "CHANGE_PASSWORD", payload: devices})
         })
         .catch(error => {
-          console.error(error, "Failed to change password")
-          dispatch({type:"PASSWORD_ERROR"})
+          console.error(error.response.status, "Failed to change password")
+          if(error.response.status===400){
+            dispatch({
+              type: "OLD_PASSWORD"
+            })
+          }else{
+            dispatch({
+              type:"PASSWORD_ERROR"
+            })
+          }
         })
     }
 }
@@ -244,7 +252,7 @@ export const forgotPassword = ({email}) => {
           dispatch({type: "FORGOT_PASSWORD", payload: devices})
         })
         .catch(error => {
-          console.error({error}, "Failed to fetch password")
+          console.error(error, "Failed to fetch password")
           dispatch({type:"FORGOT_ERROR"})
         })
     }
