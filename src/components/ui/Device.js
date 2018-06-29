@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Tooltip } from "reactstrap"
-import routerImg from "../../static/img/router.jpg"
-import { Card, CardTitle, CardText, Button } from 'reactstrap';
+import { Card, CardTitle, CardText, Button,CardImg,CardImgOverlay } from 'reactstrap';
+import imgRouter from "../../static/img/router.JPG";
 
 
 class Device extends Component {
@@ -27,12 +27,18 @@ class Device extends Component {
 
         if (type==="router") {
             return (<div className="">
-            <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
-        <CardTitle id={name}>{name}</CardTitle>
-        <CardText>{ `${model} Router`}</CardText>
-        <Button  href={url} id={name} color="secondary">Connect</Button>
-                </Card>
-            </div>
+
+
+              <Card inverse  style={{margin:"10px" }}>
+          <CardImg width="100%" src={imgRouter} alt="Card image cap" style={{height:"140px"}}/>
+            <CardImgOverlay>
+            <CardTitle id={name}>{name}</CardTitle>
+          <CardText>{ `${model} Router`}</CardText>
+              <Button  href={url} id={name} color="">Connect</Button>
+
+            </CardImgOverlay>
+        </Card>
+              </div>
             )
         } else if(type==="switch") {
             return (<div className="">
@@ -56,6 +62,8 @@ class Device extends Component {
         } else if(type==="ts") {
             return (<div className="">
                     <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
+                      <a href={url}> <CardImg width="100%" src={imgRouter} alt="Router"/>
+                      </a>
         <CardTitle id={name}>{name}</CardTitle>
         <CardText>{ `${model} Terminal Server`}</CardText>
         <Button  href={url} id={name} color="secondary">Connect</Button>
@@ -69,29 +77,5 @@ class Device extends Component {
     }
 }
 
-
-
-
-
-
-
-
-// const Device = ({obj, type}) => {
-//     const name = obj.name
-//     const url = obj.url
-//
-//     if (type==="router") {
-//         return <a className="router" href={url} > {name} </a>
-//     } else if(type==="switch") {
-//         return <a className="switch" href={url}> {name} </a>
-//     }
-//       else if(type==="ap") {
-//         return <a className="ap" href={url} > {name} </a>
-//     } else {
-//         return <a className="router" href={url} > {name} </a>
-//     }
-//
-//
-// }
 
 export default Device
