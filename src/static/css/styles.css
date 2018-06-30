@@ -186,7 +186,7 @@ body {
 
 .window  {
     background: black;
-    height: auto;
+    height: 512px;
     position: relative;
 
 }
