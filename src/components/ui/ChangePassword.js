@@ -17,16 +17,6 @@ schema
   .has().not().spaces()                           // Should not have spaces
 
 
-export const ModalPopup=()=>(
-<Popup
-  trigger={<button className="button"> Open Modal </button>}
-  modal
-  closeOnDocumentClick
->
-  <span> Modal content </span>
-</Popup>
-);
-
 class ChangePassword extends Component {
 
     constructor(props) {
@@ -86,7 +76,7 @@ class ChangePassword extends Component {
       else if(this.props.isError==="old_password"){
         return(
           <div>
-            <div><ModalPopup/></div>
+            <div>fjfhjfhj</div>
         </div>
         )
 

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Tooltip } from "reactstrap"
 import { Card, CardTitle, CardText, Button,CardImg,CardImgOverlay } from 'reactstrap';
-import imgRouter from "../../static/img/router.JPG";
+import imgRouter from "../../static/img/router.jpg";
+import imgSwitch from "../../static/img/switch1.PNG";
+import imgAP from "../../static/img/ap1.jpg";
 
 
 class Device extends Component {
@@ -26,51 +28,58 @@ class Device extends Component {
         const model = obj.model
 
         if (type==="router") {
-            return (<div className="">
-
-
-              <Card inverse  style={{margin:"10px" }}>
-          <CardImg width="100%" src={imgRouter} alt="Card image cap" style={{height:"140px"}}/>
-            <CardImgOverlay>
-            <CardTitle id={name}>{name}</CardTitle>
-          <CardText>{ `${model} Router`}</CardText>
-              <Button  href={url} id={name} color="">Connect</Button>
-
-            </CardImgOverlay>
-        </Card>
+            return (
+              <div className="">
+                <Card inverse  style={{margin:"10px" }}>
+                  <CardImg width="100%" src={imgRouter} alt="Card image cap" style={{height:"140px"}}/>
+                    <CardImgOverlay>
+                      <CardTitle id={name}>{name}</CardTitle>
+                      <CardText>{ `${model} Router`}</CardText>
+                      <Button  href={url} id={name} color="">Connect</Button>
+                    </CardImgOverlay>
+              </Card>
+             </div>
+            )
+        }else if(type==="switch") {
+            return (
+              <div className="">
+                <Card inverse  style={{margin:"10px" }}>
+                  <CardImg width="100%" src={imgSwitch} alt="Card image cap" style={{height:"140px"}}/>
+                  <CardImgOverlay>
+                    <CardTitle id={name}>{name}</CardTitle>
+                    <CardText>{ `${model} Switch`}</CardText>
+                    <Button  href={url} id={name} color="" style={{float:"left"}}>Connect</Button>
+                  </CardImgOverlay>
+                </Card>
               </div>
             )
-        } else if(type==="switch") {
-            return (<div className="">
-            <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
-        <CardTitle id={name}>{name}</CardTitle>
-        <CardText>{ `${model} Switch`}</CardText>
-        <Button  href={url} id={name} color="secondary">Connect</Button>
+        }else if(type==="ap") {
+            return (
+              <div className="">
+                <Card inverse style={{margin:"10px" , border:"none"}}>
+                  <CardImg src={imgAP}  alt="Card image cap" style={{height:"160px", width:"auto"}}/>
+                  <CardImgOverlay>
+                    <CardTitle id={name}>{name}</CardTitle>
+                    <CardText>{ `${model} Access Point`}</CardText>
+                    <Button  href={url} id={name} color="">Connect</Button>
+                  </CardImgOverlay>
                 </Card>
-                    </div>
-            )
-        }
-          else if(type==="ap") {
-            return (<div className="">
-                <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
-        <CardTitle id={name}>{name}</CardTitle>
-        <CardText>{ `${model} Access Points`}</CardText>
-        <Button  href={url} id={name} color="secondary">Connect</Button>
-                </Card>
-                    </div>
+              </div>
             )
         } else if(type==="ts") {
-            return (<div className="">
-                    <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
-                      <a href={url}> <CardImg width="100%" src={imgRouter} alt="Router"/>
-                      </a>
-        <CardTitle id={name}>{name}</CardTitle>
-        <CardText>{ `${model} Terminal Server`}</CardText>
-        <Button  href={url} id={name} color="secondary">Connect</Button>
+            return (
+              <div className="">
+                <Card inverse style={{margin:"10px" , border:"none"}}>
+                  <CardImg src={imgRouter}  alt="Card image cap" style={{height:"160px", width:"auto"}}/>
+                  <CardImgOverlay style={{padding:"1.6rem"}}>
+                    <CardTitle id={name}>{name}</CardTitle>
+                    <CardText>{ `${model} Access Point`}</CardText>
+                    <Button  href={url} id={name} color="">Connect</Button>
+                  </CardImgOverlay>
                 </Card>
-                    </div>
+              </div>
             )
-        } else {
+        }else {
           return null
         }
 
