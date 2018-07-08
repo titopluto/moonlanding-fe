@@ -1,6 +1,6 @@
 import React from "react"
 import DangerMessage from "./DangerMessage";
-import loader from "../../static/img/loader.gif";
+import loader from "../../static/img/loader1.gif";
 
 class MainComponent extends React.Component {
   constructor(props) {
@@ -26,7 +26,10 @@ class MainComponent extends React.Component {
   render() {
     const {status, children, errorMessage} = this.props
     if (status === "LOADING") {
-      return <img src={loader} alt={"loader"} />
+      return <div className="text-center">
+        <img src={loader} alt={"loader"} />
+      </div>
+
     }
 
     return <div>
