@@ -1,98 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="Added Error throwing curtain message, handled loading">
+    <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/dictionaries/jupiter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/dictionaries/jupiter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/ChangePassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/DeviceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/DeviceList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/DocPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/DocPdfList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/DocPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/DocPdfView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/ForgotPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/LabPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/LabPdfList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/LabPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/LabPdfView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/Pod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/Pod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/PodList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/PodList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/containers/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/ResetPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ChangePassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Collaboration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Collaboration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DefaultLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DefaultLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Device.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DeviceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DeviceList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DocPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DocPdfList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/DocPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DocPdfView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ForgotPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/LabPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/LabPdfList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/LabPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/LabPdfView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/NoMatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/PageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/PageContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Pod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Pod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/PodList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/PodList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Pod_modal_version.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Pod_modal_version.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ResetPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/PrivateRouteLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/PrivateRouteLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/Require_auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/Require_auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/all_pods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/all_pods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/docPdfs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/docPdfs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/initialState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/initialState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/labPdfs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/labPdfs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_changepassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_changepassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_device.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_pdfs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_pdfs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_pods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_pods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/ChangePasswordStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/ChangePasswordStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/ForgotPasswordStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/ForgotPasswordStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/NavigatorStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/NavigatorStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/deviceStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/deviceStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/iconStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/iconStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/loginStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/loginStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/newPassword.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/newPassword.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/pageContentStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/pageContentStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/pdfStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/pdfStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/podStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/podStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/img/pdfs/doc_pdfs/equipment-room.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/pdfs/doc_pdfs/equipment-room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/img/pdfs/image_pod.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/pdfs/image_pod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/App2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/App2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/PdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/PdfView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/PdfViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/PdfViewer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/RenderItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/RenderItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/DocURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/DocURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/EquipRoomURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/EquipRoomURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/HomeURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/HomeURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/LoginURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/LoginURL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/PodDeviceURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/PodDeviceURL.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangePassword.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChangePassword.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ui/ChangePassword.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -129,6 +39,15 @@
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reducer_forgotpassword.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="74" lean-forward="true" selection-start-column="74" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -221,8 +140,8 @@
       <find>changePassword</find>
       <find>tick</find>
       <find>resetPassword</find>
-      <find>text-center message-page-font</find>
       <find>this.state.error</find>
+      <find>text-center message-page-font</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -501,7 +420,7 @@
       <workItem from="1530245820952" duration="4693000" />
       <workItem from="1530388220014" duration="1324000" />
       <workItem from="1531007568317" duration="2270000" />
-      <workItem from="1531012655250" duration="8500000" />
+      <workItem from="1531012655250" duration="9334000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -580,11 +499,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530328806403</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Error throwing curtain message, handled loading, Change password page issues handled">
+      <created>1531022185752</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1531022185752</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111029000" />
+    <option name="totallyTimeSpent" value="111863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,10 +523,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.119474314" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.05724508" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -609,10 +535,10 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49648163" weight="0.15563506" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.3298969" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.033989266" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.033989266" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.20080972" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.20080972" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.09318996" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
@@ -645,7 +571,8 @@
     <MESSAGE value="Forgot Password- style changes made" />
     <MESSAGE value="Removed modal popup - ChangePassword page" />
     <MESSAGE value="Added Error throwing curtain message, handled loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Error throwing curtain message, handled loading" />
+    <MESSAGE value="Added Error throwing curtain message, handled loading, Change password page issues handled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Error throwing curtain message, handled loading, Change password page issues handled" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -749,13 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="40" column="24" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="74" lean-forward="true" selection-start-column="74" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -1044,6 +964,13 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="74" lean-forward="true" selection-start-column="74" selection-end-column="74" />
         </state>
       </provider>
     </entry>
