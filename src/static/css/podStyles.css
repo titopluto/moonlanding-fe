@@ -1,85 +1,84 @@
 .pod-wrapper {
-    /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../../static/img/pattern2.jpg");*/
-    background: url("../img/datacenter.jpeg");
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../../static/img/pattern2.jpg");*/
+  background: url("../img/datacenter.jpeg");
 }
+
 .pod-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 512px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 512px;
 
 }
 
 .pod {
-    height: 220px !important;
-    background-color: #434343;
-    color:black;
-    font-weight: bold;
-    font-family: "Nunito-Regular";
-    font-weight: bold;
-    transition: 0.5s;
-    border: 5px solid #434343;
-    /*border-top: thick solid darkblue;*/
-    transition: 1s;
-    margin: 10px 2px;
-    text-align: center;
-    font-size: 2em;
-    vertical-align: middle;
-    line-height: 200px;
-    /*border-top-left-radius: 25px;
-    border-top-right-radius: 25px;*/
-    border-radius: 20px;
+  height: 220px !important;
+  background-color: #434343;
+  color: black;
+  font-weight: bold;
+  font-family: "Nunito-Regular";
+  font-weight: bold;
+  transition: 0.5s;
+  border: 5px solid #434343;
+  /*border-top: thick solid darkblue;*/
+  transition: 1s;
+  margin: 10px 2px;
+  text-align: center;
+  font-size: 2em;
+  vertical-align: middle;
+  line-height: 200px;
+  /*border-top-left-radius: 25px;
+  border-top-right-radius: 25px;*/
+  border-radius: 20px;
 
 }
 
 .pod:hover {
-    /*flex-basis: 90px !important;*/
-    height: 220px !important;
-    background-color: darkgray;
-    color:white;
-    font-family: "Nunito-Regular";
-    font-weight: bold;
-    font-size: 2em;
-    transition: 0.5s;
-    border: 5px solid #3994E2;
-    transition: 1s;
-    text-align: center;
-    text-decoration: none;
-    background: none;
-
+  /*flex-basis: 90px !important;*/
+  height: 220px !important;
+  background-color: darkgray;
+  color: white;
+  font-family: "Nunito-Regular";
+  font-weight: bold;
+  font-size: 2em;
+  transition: 0.5s;
+  border: 5px solid #3994E2;
+  transition: 1s;
+  text-align: center;
+  text-decoration: none;
+  background: none;
 
 }
 
 .pod-list a {
-    display: block;
-    max-width :100px;
-    min-width :100px;
+  display: block;
+  max-width: 100px;
+  min-width: 100px;
 }
 
 @media only screen and (max-width: 991px) {
 
-
-.pod {
+  .pod {
     /*flex-basis: 30px !important;*/
     /*min-width:10px;*/
     height: 120px !important;
     background-color: darkgray;
-    color:black;
+    color: black;
     font-family: "Nunito-Regular";
     font-weight: bold;
     transition: 0.5s;
     border: 5px solid darkgray;
     transition: 0.5s;
-    margin  : 2px ;
+    margin: 2px;
     text-align: center;
     font-size: 22px;
     vertical-align: middle;
     line-height: 120px;
 
-}
+  }
 
-.pod:hover {
+  .pod:hover {
     /*flex-basis: 90px !important;*/
     height: 120px !important;
     transition: 0.5s;
@@ -88,10 +87,9 @@
     text-decoration: none;
     /*margin  : 0 ;*/
     /*padding: -20px;*/
-}
+  }
 
 }
-
 
 /*React Transitions*/
 .podTrans-appear {
@@ -100,7 +98,7 @@
 
 .podTrans-appear-active {
   opacity: 1;
-  transition: opacity 500ms ease-in ;
+  transition: opacity 500ms ease-in;
 }
 
 .podTrans-leave {
@@ -109,34 +107,35 @@
 
 .podTrans-leave-active {
   opacity: 0.01;
-  transition: opacity 500ms ease-out ;
+  transition: opacity 500ms ease-out;
 }
 
 /*Background for the pod*/
 .pod-background {
-	background: -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: -moz-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: -ms-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: -o-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background-size: 10px 10px, 10px 10px, 100% 100%;
-	background-position: 1px 1px, 0px 0px, center center;
+  background: -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -moz-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -ms-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -o-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background-size: 10px 10px, 10px 10px, 100% 100%;
+  background-position: 1px 1px, 0px 0px, center center;
 
-	top: 0;
+  top: 0;
 }
 
 .pod-background-2 {
-  margin :10px;
-	background: -webkit-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: -moz-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: -ms-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: -o-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background: radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
-	background-size: 100% 100%, 10px 10px, 10px 10px, 100% 100%;
-	background-position: top center, 1px 1px, 0px 0px, top center;
+  margin: 10px;
+  background: -webkit-radial-gradient(center, circle farthest-corner, rgba(255, 255, 255, 0) 50%, rgba(200, 200, 200, 1)), -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -moz-radial-gradient(center, circle farthest-corner, rgba(255, 255, 255, 0) 50%, rgba(200, 200, 200, 1)), -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -ms-radial-gradient(center, circle farthest-corner, rgba(255, 255, 255, 0) 50%, rgba(200, 200, 200, 1)), -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: -o-radial-gradient(center, circle farthest-corner, rgba(255, 255, 255, 0) 50%, rgba(200, 200, 200, 1)), -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background: radial-gradient(center, circle farthest-corner, rgba(255, 255, 255, 0) 50%, rgba(200, 200, 200, 1)), -webkit-radial-gradient(center, circle, rgba(255, 255, 255, .35), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 21%), -webkit-radial-gradient(center, circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+  background-size: 100% 100%, 10px 10px, 10px 10px, 100% 100%;
+  background-position: top center, 1px 1px, 0px 0px, top center;
 
-	bottom: 0;
-/*    //background-image: url('../img/try1.png');
-*/}
+  bottom: 0;
+  /*    //background-image: url('../img/try1.png');
+  */
+}
 
 

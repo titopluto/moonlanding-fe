@@ -1,7 +1,7 @@
 import React from 'react';
 import PDF from 'react-pdfjs';
 import spdf from "simple-react-pdf";
-import { Row, Container } from "reactstrap"
+import {Row, Container} from "reactstrap"
 
 
 import labguide from "../../../static/img/pdf/labguide.pdf"
@@ -21,14 +21,13 @@ import analyzerConnectPod15_20 from "../../../static/img/pdf/analyser-connection
 import snifferWsIP from "../../../static/img/pdf/sniffer-ws-ip.pdf"
 
 
-
 import ReactPDF from 'react-pdf';
 
 class PdfViewer extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { doc: analyzerConnectPod1_14}
+    this.state = {doc: analyzerConnectPod1_14}
     this.changeDoc = this.changeDoc.bind(this)
   }
 
@@ -37,55 +36,63 @@ class PdfViewer extends React.Component {
   }
 
 
-
   render() {
     const a = this.props.doc
 
     console.log(a)
     return (
-        <Container>
-            {/*{console.log}*/}
-    <Row>
-        <div className="col-4">
+      <Container>
+        {/*{console.log}*/}
+        <Row>
+          <div className="col-4">
             <div className="list-group doc-list">
-                  <button type="button" onClick={() => this.changeDoc(routerIntPod1_14)} className="list-group-item list-group-item-warning">
-                      Router Inferfaces Pod 1 to 14
-                  </button>
-                  <button type="button" onClick={() => this.changeDoc(routerIntPod15_20)} className="list-group-item list-group-item-warning">
-                      Router Inferfaces Pod 15 to 20
-                  </button>
-                  <button type="button" onClick={() => this.changeDoc(switchConnectPod1_14)} className="list-group-item list-group-item-warning">
-                      switch Connection Pod 1 to 14
-                  </button>
-                  <button type="button"  onClick={() => this.changeDoc(switchConnectPod15_20)} className="list-group-item list-group-item-warning">
-                      switch Connection Pod 15 to 20
-                  </button>
-                  <button type="button" onClick={() => this.changeDoc(analyzerConnectPod1_14)}  className="list-group-item list-group-item-warning">
-                      Analyzer Connection Pod1 to 14
-                  </button>
-                 <button type="button" onClick={() => this.changeDoc(analyzerConnectPod15_20)}  className="list-group-item list-group-item-warning">
-                      Analyzer Connection Pod15 to 20
-                  </button>
-                <button type="button" onClick={() => this.changeDoc(defaultWiringPod1_14)} className="list-group-item list-group-item-warning">
-                      Default Wiring Pod1 to 14
-                  </button>
-                 <button type="button"onClick={() => this.changeDoc(defaultWiringPod15_20)}  className="list-group-item list-group-item-warning">
-                      Default Wiring Pod15 to 20
-                  </button>
+              <button type="button" onClick={() => this.changeDoc(routerIntPod1_14)}
+                      className="list-group-item list-group-item-warning">
+                Router Inferfaces Pod 1 to 14
+              </button>
+              <button type="button" onClick={() => this.changeDoc(routerIntPod15_20)}
+                      className="list-group-item list-group-item-warning">
+                Router Inferfaces Pod 15 to 20
+              </button>
+              <button type="button" onClick={() => this.changeDoc(switchConnectPod1_14)}
+                      className="list-group-item list-group-item-warning">
+                switch Connection Pod 1 to 14
+              </button>
+              <button type="button" onClick={() => this.changeDoc(switchConnectPod15_20)}
+                      className="list-group-item list-group-item-warning">
+                switch Connection Pod 15 to 20
+              </button>
+              <button type="button" onClick={() => this.changeDoc(analyzerConnectPod1_14)}
+                      className="list-group-item list-group-item-warning">
+                Analyzer Connection Pod1 to 14
+              </button>
+              <button type="button" onClick={() => this.changeDoc(analyzerConnectPod15_20)}
+                      className="list-group-item list-group-item-warning">
+                Analyzer Connection Pod15 to 20
+              </button>
+              <button type="button" onClick={() => this.changeDoc(defaultWiringPod1_14)}
+                      className="list-group-item list-group-item-warning">
+                Default Wiring Pod1 to 14
+              </button>
+              <button type="button" onClick={() => this.changeDoc(defaultWiringPod15_20)}
+                      className="list-group-item list-group-item-warning">
+                Default Wiring Pod15 to 20
+              </button>
 
-                <button type="button" onClick={() => this.changeDoc(snifferWsIP)} className="list-group-item list-group-item-warning">
-                      Sniffer WorkStation IPs
-                  </button>
+              <button type="button" onClick={() => this.changeDoc(snifferWsIP)}
+                      className="list-group-item list-group-item-warning">
+                Sniffer WorkStation IPs
+              </button>
 
             </div>
-        </div>
+          </div>
 
-        <div className="col-8">
-                  <spdf.SimplePDF file={this.state.doc}/>
+          <div className="col-8">
+            <spdf.SimplePDF file={this.state.doc}/>
 
-        </div>
-    </Row>
-    </Container>
+          </div>
+        </Row>
+      </Container>
 
 
     )

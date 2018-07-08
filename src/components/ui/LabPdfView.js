@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
 class PdfView extends Component {
   state = {
@@ -9,7 +9,7 @@ class PdfView extends Component {
   }
 
   render() {
-      return null
+    return null
   }
 }
 

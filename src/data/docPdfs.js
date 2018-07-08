@@ -1,23 +1,23 @@
 export const doc_pdfs = [
-    { name: "Laboratory Guide" } ,
+  {name: "Laboratory Guide"},
 
-    { name: "Router Inferfaces Pod 1 to 14" } ,
+  {name: "Router Inferfaces Pod 1 to 14"},
 
-    { name: "Router Inferfaces Pod 15 to 20" },
+  {name: "Router Inferfaces Pod 15 to 20"},
 
-    { name: "Switch Connection Pod 1 to 14" },
+  {name: "Switch Connection Pod 1 to 14"},
 
-    { name: "Switch Connection Pod 15 to 20" },
+  {name: "Switch Connection Pod 15 to 20"},
 
-    { name: "Default Wiring Pod 1 to 14" },
+  {name: "Default Wiring Pod 1 to 14"},
 
-    { name: "Default Wiring Pod 15 to 20" },
+  {name: "Default Wiring Pod 15 to 20"},
 
-    { name: "Analyzer Connection Pod 1 to 14" },
+  {name: "Analyzer Connection Pod 1 to 14"},
 
-    { name: "Analyzer Connection Pod 15 to 20" },
+  {name: "Analyzer Connection Pod 15 to 20"},
 
-    { name: "Sniffer and WorkStation IP Addresses" },
+  {name: "Sniffer and WorkStation IP Addresses"},
 
 ]
 

@@ -1,6 +1,6 @@
 import appReducer from '../reducers'
 import reduxThunk from 'redux-thunk'
-import { createStore, applyMiddleware } from 'redux'
+import {createStore, applyMiddleware} from 'redux'
 
 // const consoleMessages = store => next => action => {
 // 	let result
@@ -23,7 +23,7 @@ import { createStore, applyMiddleware } from 'redux'
 //
 // }
 
-export default (initialState={}) => {
-	return applyMiddleware(reduxThunk)(createStore)(appReducer, initialState)
+export default (initialState = {}) => {
+  return applyMiddleware(reduxThunk)(createStore)(appReducer, initialState)
 }
 

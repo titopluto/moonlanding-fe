@@ -1,51 +1,56 @@
 /*react icons styling */
 .fa-cubes {
-    width: 110px;
-    height: 113px;
-    border-radius: 4.4px;
-    /*background-color: #fdfdfd !important;
-    border: solid 1.1px #e8e8e8;*/
-    margin-left: 12.6px;
-    margin-bottom: 11px;
-    cursor: pointer;
-    transition: box-shadow 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
-    display: inline-block;
-}
-.fa-cubes a:hover{
-	-webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-.fa-cubes:active {
-    color:darkgoldenrod;
-    transition: 0.5s;
-}
-.fa-pods,.fa-docs,.fa-reservation{
-	color :#00b4ad;
-}
-.fa-pods:hover,.fa-docs:hover,.fa-reservation:hover{
-    text-decoration: none;
-    color : black;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+  width: 110px;
+  height: 113px;
+  border-radius: 4.4px;
+  /*background-color: #fdfdfd !important;
+  border: solid 1.1px #e8e8e8;*/
+  margin-left: 12.6px;
+  margin-bottom: 11px;
+  cursor: pointer;
+  transition: box-shadow 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-block;
 }
 
-.font-1{
-    font-size: 17px;
+.fa-cubes a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
+
+.fa-cubes:active {
+  color: darkgoldenrod;
+  transition: 0.5s;
+}
+
+.fa-pods, .fa-docs, .fa-reservation {
+  color: #00b4ad;
+}
+
+.fa-pods:hover, .fa-docs:hover, .fa-reservation:hover {
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.font-1 {
+  font-size: 17px;
+}
+
 /*.fa-cubes-active {
     color:darkgoldenrod;
 }*/
 
 .ti-back-arrow {
-    color: firebrick;
-    transition: 0.5s;
+  color: firebrick;
+  transition: 0.5s;
 }
 
 .ti-back-arrow:active {
-    color: goldenrod;
-    transition: 0.5s;
+  color: goldenrod;
+  transition: 0.5s;
 }
 

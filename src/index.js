@@ -6,11 +6,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "./static/css/styles.css";
 import "./static/css/carousel.css";
 
-import { Provider } from "react-redux"
+import {Provider} from "react-redux"
 import initData from "./data/initialState"
 import storeFactory from "./store"
 import App from "./App";
-
 
 
 const initialState = initData
@@ -27,8 +26,8 @@ store.subscribe(saveState)
 
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App/>
-    </Provider>,
-    document.getElementById('root'));
+  <Provider store={store}>
+    <App/>
+  </Provider>,
+  document.getElementById('root'));
 registerServiceWorker();

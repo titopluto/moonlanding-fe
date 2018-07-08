@@ -1,5 +1,5 @@
-const carouselReducer = (state={}, action) => {
-  switch(action.type) {
+const carouselReducer = (state = {}, action) => {
+  switch (action.type) {
     case "RECEIVE_CAROUSEL":
       return action.payload
 

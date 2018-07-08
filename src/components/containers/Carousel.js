@@ -1,4 +1,4 @@
-import { connect } from "react-redux"
+import {connect} from "react-redux"
 import Carousel from "../ui/Carousel"
 import {fetchCarousel} from "../../actions";
 

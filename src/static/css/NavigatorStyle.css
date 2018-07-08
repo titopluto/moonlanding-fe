@@ -15,26 +15,29 @@
 .Navigator-wrapper h2 {
   font-weight: normal;
 }
+
 /*.Navigator-wrapper .col-lg-4 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
 */
-.center{
+.center {
   text-align: center;
 }
+
 .Navigator-wrapper {
-    /*height: 300px;*/
-    padding: 25px 0;
-/*    //background-image: url('../img/banner.jpg');
-*/    color: darkslateblue;
-    font-family: "FjallaOne-Regular";
+  /*height: 300px;*/
+  padding: 25px 0;
+  /*    //background-image: url('../img/banner.jpg');
+  */
+  color: darkslateblue;
+  font-family: "FjallaOne-Regular";
 
 }
 
 .Navigator-wrapper .description {
-    height: 4.3rem;
-    font-family: "Nunito-Regular";
-    font-size: 0.9rem
+  height: 4.3rem;
+  font-family: "Nunito-Regular";
+  font-size: 0.9rem
 
 }

@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="">
+    <list default="true" id="efd2c87f-a721-4141-9c45-08734d810da5" name="Default" comment="Added Error throwing curtain message, handled loading">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/dictionaries/jupiter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/dictionaries/jupiter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/Carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/ChangePassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/DeviceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/DeviceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/DocPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/DocPdfList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/DocPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/DocPdfView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/ForgotPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/LabPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/LabPdfList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/LabPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/LabPdfView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/Pod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/Pod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/PodList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/PodList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/containers/ResetPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Carousel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ChangePassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Collaboration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Collaboration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/DefaultLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DefaultLayout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/Device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/DeviceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DeviceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/DocPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DocPdfList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/DocPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/DocPdfView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ForgotPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/LabPdfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/LabPdfList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/LabPdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/LabPdfView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/NoMatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/NoMatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/PageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/PageContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Pod.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Pod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/PodList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/PodList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Pod_modal_version.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Pod_modal_version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/ResetPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/ResetPassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/PrivateRouteLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/PrivateRouteLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/auth/Require_auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/auth/Require_auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/all_pods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/all_pods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/docPdfs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/docPdfs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/initialState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/initialState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/labPdfs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/labPdfs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_changepassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_changepassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_pdfs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_pdfs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/reducer_pods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/reducer_pods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/ChangePasswordStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/ChangePasswordStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/ForgotPasswordStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/ForgotPasswordStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/Navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/NavigatorStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/NavigatorStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/deviceStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/deviceStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/iconStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/iconStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/loginStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/loginStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/newPassword.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/newPassword.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/pageContentStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/pageContentStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/pdfStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/pdfStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/podStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/podStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/img/pdfs/doc_pdfs/equipment-room.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/pdfs/doc_pdfs/equipment-room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/img/pdfs/image_pod.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/img/pdfs/image_pod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/App2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/App2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/PdfView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/PdfView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/PdfViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/PdfViewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/RenderItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/RenderItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/DocURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/DocURL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/EquipRoomURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/EquipRoomURL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/HomeURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/HomeURL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/LoginURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/LoginURL.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/to_delete/urlComponents/PodDeviceURL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/to_delete/urlComponents/PodDeviceURL.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,96 +103,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="ChangePassword.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/ChangePassword.js">
+      <file leaf-file-name="reducer_pdfs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reducers/reducer_pdfs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReactCompositeComponent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-dom/lib/ReactCompositeComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3791">
-              <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Device.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/Device.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pod_modal_version.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/Pod_modal_version.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangePassword.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/containers/ChangePassword.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ap.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/img/ap.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="PageContent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/PageContent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/auth/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -113,7 +116,67 @@
         <entry file="file://$PROJECT_DIR$/src/reducers/reducer_changepassword.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="31" />
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangePassword.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/ChangePassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResetPassword.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/ResetPassword.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="80" column="69" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="69" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="224" column="93" selection-start-line="224" selection-start-column="93" selection-end-line="224" selection-end-column="93" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/MainComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="61" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DangerMessage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/DangerMessage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,36 +193,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>forgotpa</find>
-      <find>emailStatus</find>
-      <find>fetchCarouselContent</find>
-      <find>carouselcontent</find>
-      <find>pageError</find>
-      <find>authError</find>
-      <find>page_error</find>
-      <find>ACTIVE_DOC_PDF</find>
-      <find>UNAUTH_USER</find>
-      <find>token_issue</find>
-      <find>CHANGE_PASSWORD</find>
-      <find>FORGOT_PASSWORD</find>
-      <find>reducerChangePassword</find>
-      <find>reducerForgotPassword</find>
-      <find>reducer_for</find>
-      <find>reducer_</find>
-      <find>FORGOT_ERROR</find>
-      <find>/auth</find>
-      <find>auth</find>
-      <find>to=&quot;/pods</find>
-      <find>Link</find>
-      <find>lock</find>
-      <find>PASSWORD_ERROR</find>
-      <find>login</find>
-      <find>className</find>
-      <find>export</find>
-      <find>export default Ca</find>
-      <find>const</find>
-      <find>export const</find>
       <find>props</find>
+      <find>Failed to change password</find>
+      <find>loadin</find>
+      <find>mainCo</find>
+      <find>loader.gif</find>
+      <find>resetp</find>
+      <find>all_pods</find>
+      <find>mainCompon</find>
+      <find>PODS_LOADING</find>
+      <find>doc_pdfs</find>
+      <find>podData</find>
+      <find>device_pods</find>
+      <find>MainComponent</find>
+      <find>DEVICES_LOADING</find>
+      <find>DOCS_LOADING</find>
+      <find>forgot-p</find>
+      <find>Password changed successfully!!</find>
+      <find>preventDefault</find>
+      <find>render&quot;</find>
+      <find>isError</find>
+      <find>resetStatus</find>
+      <find>CHANGE_PASSWORD_ERROR</find>
+      <find>FORGOT_PASSWORD_ERROR</find>
+      <find>DEVICES_ERROR</find>
+      <find>PODS_ERROR</find>
+      <find>changePassword</find>
+      <find>tick</find>
+      <find>resetPassword</find>
+      <find>text-center message-page-font</find>
+      <find>this.state.error</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -185,8 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/react-pdf/build/entry.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/LabPdfView.js" />
         <option value="$PROJECT_DIR$/src/components/containers/DocPdfView.js" />
         <option value="$PROJECT_DIR$/src/components/containers/DocPdfList.js" />
         <option value="$PROJECT_DIR$/src/components/ui/DocPdfList.js" />
@@ -195,10 +256,8 @@
         <option value="$PROJECT_DIR$/.editorconfig" />
         <option value="$PROJECT_DIR$/src/reducers/reducer_pods.js" />
         <option value="$PROJECT_DIR$/src/static/css/deviceStyles.css" />
-        <option value="$PROJECT_DIR$/src/components/containers/DeviceList.js" />
         <option value="$PROJECT_DIR$/src/components/containers/PodList.js" />
         <option value="$PROJECT_DIR$/src/components/ui/Pod.js" />
-        <option value="$PROJECT_DIR$/src/reducers/reducer_device.js" />
         <option value="$PROJECT_DIR$/src/components/ui/DeviceList.js" />
         <option value="$PROJECT_DIR$/src/reducers/reducer_carousel.js" />
         <option value="$PROJECT_DIR$/src/data/initialState.js" />
@@ -220,21 +279,25 @@
         <option value="$PROJECT_DIR$/src/static/css/Navigation.css" />
         <option value="$PROJECT_DIR$/src/static/css/ChangePasswordStyles.css" />
         <option value="$PROJECT_DIR$/src/static/css/ForgotPasswordStyles.css" />
-        <option value="$PROJECT_DIR$/src/static/css/loginStyles.css" />
         <option value="$PROJECT_DIR$/src/components/ui/WindowNavigator.js" />
         <option value="$PROJECT_DIR$/src/components/ui/DefaultLayout.js" />
-        <option value="$PROJECT_DIR$/src/actions/constants.js" />
         <option value="$PROJECT_DIR$/src/components/containers/ForgotPassword.js" />
         <option value="$PROJECT_DIR$/src/components/ui/ForgotPassword.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/components/containers/ResetPassword.js" />
-        <option value="$PROJECT_DIR$/src/components/containers/ChangePassword.js" />
         <option value="$PROJECT_DIR$/src/reducers/reducer_forgotpassword.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/ResetPassword.js" />
-        <option value="$PROJECT_DIR$/src/reducers/reducer_changepassword.js" />
         <option value="$PROJECT_DIR$/src/components/ui/auth/Login.js" />
-        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/MainComponent.js" />
+        <option value="$PROJECT_DIR$/src/reducers/reducer_device.js" />
+        <option value="$PROJECT_DIR$/src/components/containers/DeviceList.js" />
         <option value="$PROJECT_DIR$/src/components/ui/Device.js" />
+        <option value="$PROJECT_DIR$/src/actions/constants.js" />
+        <option value="$PROJECT_DIR$/src/static/css/loginStyles.css" />
+        <option value="$PROJECT_DIR$/src/components/ui/ResetPassword.js" />
+        <option value="$PROJECT_DIR$/src/components/containers/ChangePassword.js" />
+        <option value="$PROJECT_DIR$/src/reducers/reducer_changepassword.js" />
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/DangerMessage.js" />
         <option value="$PROJECT_DIR$/src/components/ui/ChangePassword.js" />
       </list>
     </option>
@@ -271,8 +334,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -335,6 +396,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,127 +411,6 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/components/ui/Device.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/css/styles.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/router.jpg</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/capture1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/capture2.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/colorful-document-icons-collection-vector.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/doc and pod.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/option2.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/pencil calrendar.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/tick.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/static/img/yellow.jpg</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -557,6 +499,9 @@
       <workItem from="1530152458502" duration="8353000" />
       <workItem from="1530233492170" duration="556000" />
       <workItem from="1530245820952" duration="4693000" />
+      <workItem from="1530388220014" duration="1324000" />
+      <workItem from="1531007568317" duration="2270000" />
+      <workItem from="1531012655250" duration="8500000" />
     </task>
     <task id="LOCAL-00001" summary="Styling, doc pdf end point wiring">
       <created>1525808019114</created>
@@ -628,11 +573,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529791393897</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Removed modal popup - ChangePassword page">
+      <created>1530328806403</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1530328806403</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98882000" />
+    <option name="totallyTimeSpent" value="111029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -655,80 +607,28 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035184" side_tool="true" weight="0.0034423408" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49648163" weight="0.0034364262" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49648163" weight="0.15563506" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.3298969" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.10554562" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.033989266" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.19433199" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.20080972" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.09318996" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info id="Designer" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.19109312" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.119474314" />
-      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49648163" weight="0.0034364262" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3298969" />
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035184" side_tool="true" weight="0.0034423408" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3297491" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.09318996" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.1842576" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49648163" weight="0.0034423408" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.3297491" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="3" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.119474314" />
-      <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="5" />
-      <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.09318996" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.12066906" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035184" side_tool="true" weight="0.0034423408" />
-      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.18139172" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -743,121 +643,16 @@
     <MESSAGE value="Final code commits" />
     <MESSAGE value="Final code commits- Design changes - Reset password , forget password, change password" />
     <MESSAGE value="Forgot Password- style changes made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forgot Password- style changes made" />
+    <MESSAGE value="Removed modal popup - ChangePassword page" />
+    <MESSAGE value="Added Error throwing curtain message, handled loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Error throwing curtain message, handled loading" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/ui/auth/Login.js</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/ui/DeviceList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/containers/DeviceList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/podStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="15" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/iconStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Collaboration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="45" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/pageContentStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="65" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="3065" column="8" selection-start-line="3065" selection-start-column="8" selection-end-line="3065" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/auth/PrivateRouteLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/pdfStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/containers/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/to_delete/App2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/css/eLinkStyles.css" />
     <entry file="file://$PROJECT_DIR$/src/static/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -908,20 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/loginStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/all_pods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/img/pdfs/image_pod.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -936,13 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -954,34 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/containers/ResetPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/DefaultLayout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/ForgotPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1003,16 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="40" column="24" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/ResetPassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -1032,27 +768,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/auth/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        <state relative-caret-position="1224">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_changepassword.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1070,7 +789,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/ui/PageContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="33" />
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1079,7 +798,127 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/Pod_modal_version.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/img/ap1.jpg" />
+    <entry file="file://$PROJECT_DIR$/node_modules/react-dom/lib/ReactCompositeComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/DefaultLayout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/all_pods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/PodList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/PodList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Pod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/DocPdfList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_pods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/DeviceList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/redux/es/createStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/css/loginStyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/DeviceList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1088,37 +927,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/containers/ChangePassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        <state relative-caret-position="119">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/DocPdfList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/ResetPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="29" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Device.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="28" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_device.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_pdfs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/reducer_changepassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/ForgotPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="224" column="93" selection-start-line="224" selection-start-column="93" selection-end-line="224" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/MainComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/DangerMessage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/ResetPassword.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="80" column="69" lean-forward="true" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/ChangePassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="306">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dom/lib/ReactCompositeComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3791">
-          <caret line="223" lean-forward="true" selection-start-line="223" selection-end-line="223" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Device.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

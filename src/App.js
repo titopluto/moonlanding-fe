@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Switch, Route } from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 
 import PodList from "./components/containers/PodList"
 import ChangePassword from "./components/containers/ChangePassword"
@@ -14,26 +14,25 @@ import NoMatch from "./components/ui/NoMatch"
 import PrivateRouteLayout from "./components/ui/auth/PrivateRouteLayout"
 import PageContent from "./components/ui/PageContent"
 
-
 const App = ({history}) => (
-    <Router>
-        <div>
+  <Router>
+    <div>
 
-                <Switch>
-                    <PrivateRouteLayout exact path="/" component={Carousel}/>
-                    <PrivateRouteLayout exact path="/" component={PageContent}/>
-                    <PrivateRouteLayout  path="/pods" component={PodList}/>
-                    <PrivateRouteLayout  path="/docs" component={DocPdfList}/>
-                    <PrivateRouteLayout  path="/lab-docs" component={LabPdfList}/>
-                    <PrivateRouteLayout exact path="/changepassword" component={ChangePassword}/>
-                    <Route path="/auth" component={Login} />
-                    <Route path="/forgotpassword" component={ForgotPassword} />
-                    <Route path="/resetpassword/:token" component={ResetPassword} />
-                    <Route component={NoMatch} />
-                </Switch>
+      <Switch>
+        <PrivateRouteLayout exact path="/" component={Carousel}/>
+        <PrivateRouteLayout exact path="/" component={PageContent}/>
+        <PrivateRouteLayout path="/pods" component={PodList}/>
+        <PrivateRouteLayout path="/docs" component={DocPdfList}/>
+        <PrivateRouteLayout path="/lab-docs" component={LabPdfList}/>
+        <PrivateRouteLayout exact path="/changepassword" component={ChangePassword}/>
+        <Route path="/auth" component={Login}/>
+        <Route path="/forgotpassword" component={ForgotPassword}/>
+        <Route path="/resetpassword/:token" component={ResetPassword}/>
+        <Route component={NoMatch}/>
+      </Switch>
 
-        </div>
-    </Router>
+    </div>
+  </Router>
 
 )
 

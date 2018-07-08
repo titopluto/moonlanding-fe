@@ -1,10 +1,9 @@
 import React from "react"
-import { Redirect } from 'react-router-dom';
-
+import {Redirect} from 'react-router-dom';
 
 
 const NoMatch = () =>
-    <Redirect to="/" />
+  <Redirect to="/"/>
 
 
 export default NoMatch

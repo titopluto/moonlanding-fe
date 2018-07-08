@@ -1,10 +1,12 @@
-import { combineReducers } from "redux"
-import { reducer as formReducer } from "redux-form"
+import {combineReducers} from "redux"
+import {reducer as formReducer} from "redux-form"
 import C from "../actions/constants"
 import podsReducer from "./reducer_pods"
 import authReducer from "./reducer_auth"
-import { docPdfReducer,
-        labPdfReducer, activeLabPdfReducer} from "./reducer_pdfs"
+import {
+  docPdfReducer,
+  labPdfReducer, activeLabPdfReducer
+} from "./reducer_pdfs"
 import initState from "../data/initialState"
 import deviceReducer from "./reducer_device";
 import carouselReducer from "./reducer_carousel";
@@ -13,18 +15,18 @@ import reducerChangePassword from "./reducer_changepassword";
 
 
 const appReducer = combineReducers(
-    {
-        all_pods: podsReducer,
-        device_pods : deviceReducer,
-        doc_pdfs : docPdfReducer,
-        lab_pdfs: labPdfReducer,
-        active_lab_pdf: activeLabPdfReducer,
-        carousel : carouselReducer,
-        auth: authReducer,
-        emailStatus : reducerForgotPassword,
-        form: formReducer,
-        resetStatus : reducerChangePassword
-    }
+  {
+    all_pods: podsReducer,
+    device_pods: deviceReducer,
+    doc_pdfs: docPdfReducer,
+    lab_pdfs: labPdfReducer,
+    active_lab_pdf: activeLabPdfReducer,
+    carousel: carouselReducer,
+    auth: authReducer,
+    emailStatus: reducerForgotPassword,
+    form: formReducer,
+    resetStatus: reducerChangePassword
+  }
 )
 
 const rootReducer = (state, action) => {

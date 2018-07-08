@@ -1,4 +1,3 @@
-
 export const auth = {
-    authenticated: false
+  authenticated: false
 }

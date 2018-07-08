@@ -12,27 +12,27 @@ class Carousel extends React.Component {
     this.props.fetchCarousel()
   }
 
-  render(){
-    const getImage  = (imageName) => {
-      if(imageName == "banner1.jpg"){
+  render() {
+    const getImage = (imageName) => {
+      if (imageName == "banner1.jpg") {
         return pchute
-      }else if(imageName == "bulb.jpg"){
+      } else if (imageName == "bulb.jpg") {
         return cloudHand
       }
       return redCloud
     }
     const carouselItems = this.props.carouselList.map(function (carousel) {
       return {
-        src : getImage(carousel.img),
-        altText : carousel.title,
-        caption : carousel.description,
-        header : carousel.title
+        src: getImage(carousel.img),
+        altText: carousel.title,
+        caption: carousel.description,
+        header: carousel.title
       }
 
     })
 
-    return <UncontrolledCarousel items={carouselItems} />
-    }
+    return <UncontrolledCarousel items={carouselItems}/>
+  }
 }
 
 export default Carousel
