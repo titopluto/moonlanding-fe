@@ -1,19 +1,39 @@
 import React from "react"
 import DangerMessage from "./DangerMessage";
-import loader from "../../static/img/loader1.gif";
+import loader from "../../static/img/loader.gif";
 
-const MainComponent = ({status, children, errorMessage}) => {
-
-  if (status === "LOADING") {
-    return <div className="text-center">
-      <img src={loader} alt={"loader"}/>
-    </div>
+class MainComponent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isDangerActive: false
+    }
   }
 
-  return <div>
-    {status ==="ERROR" ? <DangerMessage message={errorMessage}/> : null}
-    {children}
-  </div>
+  componentDidMount() {
+    if (this.props.status === "ERROR") {
+      this.setState({
+        isDangerActive: true
+      })
+      setTimeout(() => {
+        this.setState({
+          isDangerActive: false
+        }, 5000)
+      })
+    }
+  }
+
+  render() {
+    const {status, children, errorMessage} = this.props
+    if (status === "LOADING") {
+      return <img src={loader} alt={"loader"} />
+    }
+
+    return <div>
+      {this.state.isDangerActive ? <DangerMessage message={errorMessage} /> : null}
+      {children}
+    </div>
+  }
 }
 
 export default MainComponent
