@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card, CardTitle, CardText, Button,CardImg,CardImgOverlay,CardFooter,CardHeader,CardBody } from 'reactstrap';
 import imgRouter from "../../static/img/router.jpg";
 import imgSwitch from "../../static/img/switch.jpg";
-import imgAP from "../../static/img/ap.jpg";
+import imgAP from "../../static/img/ap2.jpg";
 import MainComponent from "./MainComponent";
 
 class Device extends Component {
@@ -30,29 +30,31 @@ class Device extends Component {
       return (
         <MainComponent status={this.props.status} errorMessage={this.props.error}>
           <div className="">
-          <Card>
-            <CardHeader id={name}>{name}</CardHeader>
-            <CardBody>
-              <img  width="100%" src={imgRouter} alt="Card image cap" style={{height:"140px"}} />
-            </CardBody>
-            <CardFooter className="">
-              <Button  href={url} id={name} color="">Connect</Button>
-
-            </CardFooter>
-          </Card>
-        </div>
+            <Card>
+              <CardHeader id={name}>{name}
+                <CardText>{ `${model} Switches`}</CardText>
+              </CardHeader>
+              <CardBody style={{padding:"0px"}}>
+                <img  width="100%" src={imgRouter} alt="Card image cap" style={{height:"140px"}} />
+              </CardBody>
+              <CardFooter className="">
+                <Button  href={url} id={name} color="">Connect</Button>
+              </CardFooter>
+            </Card>
+          </div>
         </MainComponent>
       )
     } else if(type==="switch") {
       return (<div className="">
           <Card style={{margin:"10px" }}>
-            <CardHeader id={name}>{name}</CardHeader>
-            <CardBody>
+            <CardHeader id={name}>{name}
+              <CardText>{ `${model} Switches`}</CardText>
+            </CardHeader>
+            <CardBody style={{padding:"0px"}}>
               <img  width="100%" src={imgSwitch} alt="Card image cap" style={{height:"140px"}} />
             </CardBody>
             <CardFooter className="">
               <Button  href={url} id={name} color="">Connect</Button>
-
             </CardFooter>
           </Card>
         </div>
@@ -60,19 +62,27 @@ class Device extends Component {
     }
     else if(type==="ap") {
       return (<div className="">
-          <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333', margin:"10px" }}>
-            <CardTitle id={name}>{name}</CardTitle>
-            <CardText>{ `${model} Access Points`}</CardText>
-            <Button  href={url} id={name} color="secondary">Connect</Button>
+          <Card style={{margin:"10px" }}>
+            <CardHeader id={name}>{name}
+              <CardText>{ `${model} Access Points`}</CardText>
+            </CardHeader>
+            <CardBody style={{padding:"0px"}}>
+              <img src={imgAP} alt="Card image cap" style={{height:"140px"}} />
+            </CardBody>
+            <CardFooter className="">
+              <Button  href={url} id={name} color="">Connect</Button>
+            </CardFooter>
           </Card>
         </div>
       )
     } else if(type==="ts") {
       return (<div className="">
           <Card>
-            <CardHeader id={name}>{name}</CardHeader>
-            <CardBody>
-              <img  width="100%" src={imgRouter} alt="Card image cap" style={{height:"140px"}} />
+            <CardHeader id={name}>{name}
+              <CardText>{ `${model} Terminal Server`}</CardText>
+            </CardHeader>
+            <CardBody style={{padding:"0px"}}>
+              <img src={imgRouter} alt="Card image cap" style={{height:"140px"}} />
             </CardBody>
             <CardFooter className="">
               <Button  href={url} id={name} color="">Connect</Button>
@@ -90,5 +100,4 @@ class Device extends Component {
 
 
 export default Device
-
 
