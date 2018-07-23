@@ -38,16 +38,15 @@
   /*flex-basis: 90px !important;*/
   height: 220px !important;
   background-color: darkgray;
-  color: white;
+  color: #3994E2;
   font-family: "Nunito-Regular";
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3.5em;
   transition: 0.5s;
-  border: 5px solid #3994E2;
+  border: 5px solid green;
   transition: 1s;
   text-align: center;
   text-decoration: none;
-  background: none;
 
 }
 

@@ -2,7 +2,7 @@ import axios from "axios"
 import C from "./constants"
 
 //const API_URL = "http://access.inwk.dal.ca/api"
-const TEMP_URL = "http://129.173.143.240:8000/api"
+const TEMP_URL = "http://localhost:8000/api"
 
 const get_headers = () => {
   const token = localStorage.getItem("token")
@@ -125,6 +125,7 @@ export const pageError = error => {
 }
 
 export const fetchPods = () => {
+  console.log("fetching pods")
   return (dispatch) => {
     dispatch({type: C.PODS_LOADING})
     axios.get(`${TEMP_URL}/pods`, get_headers())
@@ -180,6 +181,26 @@ export const fetchCourses = () => {
       })
   }
 }
+
+export const fetchAllDevices = () => {
+  return (dispatch) => {
+    dispatch({type: C.DEVICES_LOADING})
+    axios.get(`${TEMP_URL}/pods`, get_headers())
+
+      .then(({data: devices}) => {
+        console.log(devices)
+        dispatch({type: "RECEIVE_ALL_DEVICES", payload: devices})
+      })
+      .catch(error => {
+        if (token_issue(error)) {
+          dispatch({type: C.UNAUTH_USER})
+        }
+        dispatch({type: C.DEVICES_ERROR, payload: {error: "Failed to fetch all devices"}})
+      })
+  }
+}
+
+
 
 
 export const fetchDevices = (podId) => {

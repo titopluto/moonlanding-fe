@@ -23,6 +23,7 @@ class PodList extends Component {
 
 
   render() {
+    console.log("match podlist==>", this.props.match.params)
     const {status, pods, match, error} = this.props;
 
     return <MainComponent status={status} errorMessage={error}>
@@ -48,7 +49,9 @@ class PodList extends Component {
 
 
           )}/>
-          <Route path={`${match.url}/:id`} component={DeviceList}/>
+          <Route path={`${match.url}/:id`} render={(props)=><DeviceList pods={pods} {...props}/>}/>
+
+
 
         </Switch>
       </div>

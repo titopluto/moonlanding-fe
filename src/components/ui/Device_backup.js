@@ -33,14 +33,14 @@ class Device extends Component {
         <MainComponent status={this.props.status} errorMessage={this.props.error}>
           <div className="">
             <Card>
-              <CardHeader id={name} className='card-txt text-center font-weight-bold text-success'>
+              <CardHeader id={name} className='card-txt text-center font-weight-bold'>
                 {name}
               </CardHeader>
               <CardBody >
                 <a href={url}>
                   <img width="100%"   src={imgRouter} alt="Card image cap" />
                 </a>
-                <CardText className='card-txt text-center text-dark'>{ `${model} Router`}</CardText>
+                <CardText className='card-txt text-center'>{ `${model} Router`}</CardText>
               </CardBody>
 
             </Card>
@@ -50,11 +50,11 @@ class Device extends Component {
     } else if(type==="switch") {
       return (<div className="">
           <Card style={{margin:"10px" }}>
-            <CardHeader id={name} className='card-txt text-center font-weight-bold text-success'>{name}
+            <CardHeader id={name} className='card-txt text-center font-weight-bold'>{name}
             </CardHeader>
             <CardBody >
               <a href={url}> <img width="100%" src={imgSwitch} alt="Card image cap"  /> </a>
-              <CardText className='card-txt text-center text-dark'>{ `${model} Switch`}</CardText>
+              <CardText className='card-txt text-center'>{ `${model} Switch`}</CardText>
             </CardBody>
           </Card>
         </div>
@@ -63,13 +63,13 @@ class Device extends Component {
     else if(type==="ap") {
       return (<div className="">
           <Card style={{margin:"10px" }}>
-            <CardHeader id={name} className='card-txt text-center font-weight-bold text-success'>{name}
+            <CardHeader id={name} className='card-txt text-center font-weight-bold'>{name}
             </CardHeader>
             <CardBody >
               <a href={url}>
                 <img className='rounded mx-auto d-block' height='120px' src={imgAP} alt="Card image cap" />
               </a>
-              <CardText className='card-txt text-center text-dark'>{ `${model} Access Point`}</CardText>
+              <CardText className='card-txt text-center'>{ `${model} Access Point`}</CardText>
             </CardBody>
           </Card>
         </div>
@@ -77,7 +77,7 @@ class Device extends Component {
     } else if(type==="ts") {
       return (<div className="">
           <Card>
-              <CardHeader id={name} className='card-txt text-center font-weight-bold text-success'>
+              <CardHeader id={name} className='card-txt text-center font-weight-bold'>
                 {name}
 
               </CardHeader>
@@ -85,7 +85,7 @@ class Device extends Component {
                 <a href={url}>
                   <img height="70px"   src={imgTerminal} alt="Card image cap" />
                 </a>
-                <CardText className='card-txt text-center text-dark'>{ `${model}`}</CardText>
+                <CardText className='card-txt text-center'>{ `${model}`}</CardText>
               </CardBody>
 
             </Card>

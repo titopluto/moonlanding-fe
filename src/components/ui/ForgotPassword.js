@@ -38,9 +38,11 @@ class ForgotPassword extends Component {
           <div className="font-type" className="image-height">
             <img className="" src={tick} width="315" height="300" alt=""/>
           </div>
-          <h3>Email successfully sent!! Please check your mail</h3>
+          <h3>Reset Email link successfully sent!! Please check your mail</h3>
         </div>
-      ) : (
+      )
+        :
+        (
         <div>
           <Navigation/>
           <div className="text-center page-font">
@@ -51,7 +53,7 @@ class ForgotPassword extends Component {
               <img className="" src={mail} width="230" height="180" alt=""/>
             </div>
             <div className="heading-1">Forgot your Password?</div>
-            <div className="heading-2">No need to worry!! To reset your password Lorem epsum</div>
+            <div className="heading-2"> Enter your registered username(email) and a reset link will be sent to you  </div>
             <div className="inputStyles">
               <form className="" onSubmit={this.handleFormSubmit}>
                 <label>

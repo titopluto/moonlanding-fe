@@ -158,6 +158,30 @@
   border: 5px solid greenyellow;
 }
 
+.card-txt {
+  font-family: "OpenSans-Regular";
+}
+
+.device-container .nav-tab {
+  font-family: "OpenSans-Regular";
+  padding-bottom: 40px;
+  padding-left: 90px;
+  /*margin-left: 100px;*/
+    /*margin-right: auto;*/
+}
+
+.nav-tabs li {
+    overflow: auto;
+    white-space: nowrap;
+    width: 80px;
+    border: 2px solid darkslategray;
+    text-align: center;
 
 
+}
 
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    color: white !important;
+    background-color: green;
+
+}
