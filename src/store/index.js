@@ -1,6 +1,7 @@
 import appReducer from '../reducers'
 import reduxThunk from 'redux-thunk'
-import {createStore, applyMiddleware} from 'redux'
+import {createStore, applyMiddleware, compose} from 'redux'
+import { autoRehydrate } from 'redux-persist'
 
 // const consoleMessages = store => next => action => {
 // 	let result
@@ -23,7 +24,22 @@ import {createStore, applyMiddleware} from 'redux'
 //
 // }
 
-export default (initialState = {}) => {
-  return applyMiddleware(reduxThunk)(createStore)(appReducer, initialState)
-}
+// export default (initialState = {}) => {
+//   return applyMiddleware(reduxThunk)(createStore)(appReducer, initialState)
+// }
 
+
+const middlewares = [ reduxThunk ]
+
+const enhancers = [
+  applyMiddleware(...middlewares),
+  autoRehydrate(),
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+]
+
+
+const store = createStore(appReducer, compose(...enhancers) )
+
+
+
+export default store

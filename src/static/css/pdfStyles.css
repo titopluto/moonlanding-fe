@@ -2,11 +2,12 @@
 
 .pdf-wrapper {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../../static/img/pattern3.jpg");
-
+  min-height: 890px;
 }
 
 .pdf-wrapper .container {
   min-height: 500px;
+  background-color: grey;
 }
 
 .list-group-item:hover {
@@ -45,6 +46,7 @@
 .pdf-flex-wrapper {
   display: flex;
   flex-wrap: wrap;
+  min-height: 890px;
 }
 
 .pdf-view {

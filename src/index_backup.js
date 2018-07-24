@@ -12,15 +12,22 @@ import storeFactory from "./store"
 import App from "./App";
 
 
+const initialState = initData
 
 
-window.React = React
+const saveState = () => store.getState()
+
+
+const store = storeFactory(initialState)
+store.subscribe(saveState)
+
+// window.React = React
 // window.store = store
 
 
-ReactDOM.render((
-    <App/>),
+ReactDOM.render(
+  <Provider store={store}>
+    <App/>
+  </Provider>,
   document.getElementById('root'));
 registerServiceWorker();
-
-

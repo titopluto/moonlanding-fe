@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../../static/img/pattern2.jpg");*/
-
+  background-color: grey;
 }
 
 .device-heading a:hover {
@@ -12,10 +12,7 @@
   */
 }
 
-.device-container a {
-  display: block;
-  text-decoration: none;
-}
+
 
 .device-row {
   display: flex;
@@ -35,6 +32,13 @@
 .device-container {
   padding: 20px;
   border: 5px solid darkslategray;
+  background-color: white;
+}
+
+.device-container a {
+  display: block;
+  text-decoration: none;
+
 }
 
 .router {
