@@ -6,7 +6,7 @@ const MainComponent = ({status, children, errorMessage}) => {
 
   if (status === "LOADING") {
     // TODO: loader
-    return <div className="textCenter">
+    return <div className="text-center">
       <img src={loader} alt={"loader"}/>
     </div>
   }
