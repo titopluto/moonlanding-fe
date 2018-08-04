@@ -18,7 +18,7 @@ class PdfView extends Component {
     if (!selected) {
       return null
     }
-    const {pageNumber, numPages} = this.state;
+    const {pageNumber} = this.state;
     const selectedFile = pdf.find(p => p.name === selected)
     const fileName = `http://129.173.143.240:8001/${selectedFile.file}`
 

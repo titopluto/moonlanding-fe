@@ -14,9 +14,9 @@ class Carousel extends React.Component {
 
   render() {
     const getImage = (imageName) => {
-      if (imageName == "banner1.jpg") {
+      if (imageName === "banner1.jpg") {
         return pchute
-      } else if (imageName == "bulb.jpg") {
+      } else if (imageName === "bulb.jpg") {
         return cloudHand
       }
       return redCloud

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardTitle, CardText, Button,CardImg,CardImgOverlay,CardFooter,CardHeader,CardBody } from 'reactstrap';
+import { Card, CardText, CardHeader,CardBody } from 'reactstrap';
 import imgRouter from "../../static/img/router.jpg";
 import imgSwitch from "../../static/img/switch.jpg";
 import imgTerminal from "../../static/img/terminal.jpg";
@@ -38,7 +38,7 @@ class Device extends Component {
               </CardHeader>
               <CardBody >
                 <a href={url}>
-                  <img width="100%"   src={imgRouter} alt="Card image cap" />
+                  <img width="100%" src={imgRouter} alt="Card cap router" />
                 </a>
                 <CardText className='card-txt text-center text-dark'>{ `${model} Router`}</CardText>
               </CardBody>
@@ -53,7 +53,7 @@ class Device extends Component {
             <CardHeader id={name} className='card-txt text-center font-weight-bold text-success'>{name}
             </CardHeader>
             <CardBody >
-              <a href={url}> <img width="100%" src={imgSwitch} alt="Card image cap"  /> </a>
+              <a href={url}> <img width="100%" src={imgSwitch} alt="Card cap switch"  /> </a>
               <CardText className='card-txt text-center text-dark'>{ `${model} Switch`}</CardText>
             </CardBody>
           </Card>
@@ -67,7 +67,7 @@ class Device extends Component {
             </CardHeader>
             <CardBody >
               <a href={url}>
-                <img className='rounded mx-auto d-block' height='120px' src={imgAP} alt="Card image cap" />
+                <img className='rounded mx-auto d-block' height='120px' src={imgAP} alt="Card cap ap" />
               </a>
               <CardText className='card-txt text-center text-dark'>{ `${model} Access Point`}</CardText>
             </CardBody>
@@ -83,7 +83,7 @@ class Device extends Component {
               </CardHeader>
               <CardBody >
                 <a href={url}>
-                  <img height="70px"   src={imgTerminal} alt="Card image cap" />
+                  <img height="70px" rc={imgTerminal} alt="Card cap ts" />
                 </a>
                 <CardText className='card-txt text-center text-dark'>{ `${model}`}</CardText>
               </CardBody>

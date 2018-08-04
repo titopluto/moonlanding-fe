@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {Field, InputError, reduxForm} from "redux-form"
 import {Link} from 'react-router-dom'
 
 import lock from "../../static/img/save.gif";
@@ -8,7 +7,6 @@ import {Helmet} from 'react-helmet';
 import passwordValidator from 'password-validator';
 import "../../static/css/ChangePasswordStyles.css"
 import {Button} from 'reactstrap';
-import Navigation from "../containers/Navigation"
 import MainComponent from "./MainComponent";
 
 

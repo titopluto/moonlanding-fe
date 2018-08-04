@@ -1,15 +1,10 @@
 import React from "react";
 import _ from "lodash"
-import {Link} from "react-router-dom"
 import Device from "./Device"
 import "../../static/css/deviceStyles.css"
-import {MdSubdirectoryArrowLeft} from "react-icons/lib/md/"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {TiArrowLeftThick} from "react-icons/lib/ti/"
 import classnames from "classnames";
-import { Card, CardTitle, CardText, Button,CardImg,
-  CardImgOverlay,CardFooter,CardHeader,
-  CardBody,TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 
 import uuidv1 from "uuid/v1"
 
@@ -19,8 +14,6 @@ import uuidv1 from "uuid/v1"
 
 class DeviceList extends React.Component {
   componentWillMount() {
-    const {match} = this.props
-
     this.props.fetchAllDevices();
 
     this.toggle = this.toggle.bind(this);
@@ -30,9 +23,7 @@ class DeviceList extends React.Component {
   }
 
   toggle(tab) {
-    console.log("active-tab", this.state.activeTab)
     if (this.state.activeTab !== tab) {
-      console.log("active-tab-after", this.state.activeTab)
       this.setState({
         activeTab: tab
       });
@@ -54,17 +45,7 @@ class DeviceList extends React.Component {
     )
   }
 
-  renderTabContents(item) {
-
-    return (
-      <div>  </div>
-    )
-  }
-
   renderTabs(podDevices, podName) {
-
-    const {match, all_devices} = this.props
-
     const routers = _.filter(podDevices, {"type":"router"} )
     const switches = _.filter(podDevices, {"type":"switch"} )
     const accessPoints = _.filter(podDevices, {"type":"accessPoint"} )
@@ -96,21 +77,18 @@ class DeviceList extends React.Component {
 
   render() {
 
-    const { match, devices: {devices}, pods, all_devices } = this.props
+    const { all_devices } = this.props
     let odd_pods = {}
     let even_pods = {}
 
     _.forEach(all_devices, (value, key) => {
-        if (parseInt(key.split(" ")[1]) % 2 === 0) {
+        if (parseInt(key.split(" ")[1], 10) % 2 === 0) {
             even_pods[key] = value
         }
         else {
           odd_pods[key] = value
         }
     })
-
-
-    console.log(even_pods)
 
     return (
       <div className="device-wrapper">

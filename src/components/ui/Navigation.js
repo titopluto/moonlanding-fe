@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavDropdown} from 'reactstrap';
+import {Container, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem} from 'reactstrap';
 import {NavLink, Link} from 'react-router-dom'
 import dalLogo from "../../static/img/dalLogo.png"
-import {FaTimesCircle, FaHome} from "react-icons/lib/fa/"
+import {FaHome} from "react-icons/lib/fa/"
 import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
 import "../../static/css/Navigation.css"
 
@@ -43,11 +43,9 @@ class Navigation extends Component {
 
   renderPasswordChangeButton() {
 
-    const {authenticated, history, logoutUser} = this.props
+    const {authenticated} = this.props
     if (authenticated) {
       return <NavLink to="/changepassword">Change Password</NavLink>
-
-
     }
   }
 

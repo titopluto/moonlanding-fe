@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {Field, InputError, reduxForm} from "redux-form";
 import mail from "../../static/img/mail21.gif";
 import tick from "../../static/img/mail11.gif";
 import "../../static/css/ForgotPasswordStyles.css"
@@ -19,7 +18,6 @@ class ForgotPassword extends Component {
   }
 
   handleFormSubmit(event) {
-    const {history} = this.props
     event.preventDefault();
     this.props.forgotPassword(this.state)
   }

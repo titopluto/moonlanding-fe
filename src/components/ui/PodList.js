@@ -6,7 +6,6 @@ import "../../static/css/podStyles.css"
 
 import DeviceList from "../containers/DeviceList"
 import Pod from "./Pod"
-import DangerMessage from "./DangerMessage";
 import MainComponent from "./MainComponent";
 
 

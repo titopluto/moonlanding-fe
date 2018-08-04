@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {InputError} from "redux-form"
 import {Link} from 'react-router-dom'
 import "../../static/css/newPassword.css"
 import lock from "../../static/img/lock2.gif";
