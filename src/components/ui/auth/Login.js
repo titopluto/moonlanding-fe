@@ -4,12 +4,20 @@ import {Field, reduxForm} from "redux-form"
 import {loginUser} from "../../../actions"
 import {NavLink} from 'react-router-dom'
 import "../../../static/css/loginStyles.css"
+import isTokenValid from "../../../auth/isTokenValid";
 
 class Login extends Component {
   constructor(props) {
     super(props)
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
     this.alertError = this.alertError.bind(this)
+  }
+
+  componentWillMount() {
+    const {history} = this.props
+    if (isTokenValid(localStorage.getItem("token"))) {
+      history.push("/")
+    }
   }
 
   required = value => value ? undefined : 'Required'

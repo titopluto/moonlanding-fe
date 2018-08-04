@@ -43,7 +43,7 @@ export const activeLabPdf = (pdf) => {
   )
 }
 
-// absolete
+// obsolete
 export const verifyToken = () => {
   return dispatch => {
     const token = localStorage.getItem("token")
@@ -70,13 +70,11 @@ export const verifyToken = () => {
 
 
 export const verifyTokenExists = () => {
-
   return localStorage.getItem("token") != null
 }
 
 export const loginUser = ({email, password}, history) => {
-  console.log("In .")
-  return (dispatch, getState) => {
+  return (dispatch) => {
     axios.post(`${TEMP_URL}/token/`, {username: email, password})
       .then(response => {
         //update state to  indicate the use is authenticated
@@ -86,9 +84,8 @@ export const loginUser = ({email, password}, history) => {
         //redirect user to home page
         history.push("/")
       })
-      .catch(error => {
+      .catch(_ => {
           dispatch(authError("Unable to login, please check your username and password"))
-          // console.log(error.response.data)
         }
       );
   }
