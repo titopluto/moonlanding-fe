@@ -8,7 +8,7 @@ export default function isTokenValid(token) {
   }
   try {
     const parsedPayload = JSON.parse(atob(payload))
-    return parsedPayload.exp < (Date.now() / 1000);
+    return (Date.now() / 1000) < parsedPayload.exp;
   } catch (e) {
     console.log("Error parsing JSON -> ", e)
     return false
