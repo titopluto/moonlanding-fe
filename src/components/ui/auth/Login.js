@@ -1,16 +1,21 @@
 import React, {Component} from "react"
 import {connect} from "react-redux"
 import {Field, reduxForm} from "redux-form"
-import {loginUser} from "../../../actions"
+import {loginUser, verifyToken} from "../../../actions"
 import {NavLink} from 'react-router-dom'
 import "../../../static/css/loginStyles.css"
 import isTokenValid from "../../../auth/isTokenValid";
+import MainComponent from "../MainComponent";
 
 class Login extends Component {
   constructor(props) {
     super(props)
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
     this.alertError = this.alertError.bind(this)
+  }
+
+  componentWillMount() {
+    this.props.verifyToken()
   }
 
   componentWillMount() {
@@ -34,7 +39,6 @@ class Login extends Component {
           <span className="small error">{error}</span>) || (warning && <span>{warning}</span>))}
       </div>
     )
-
   }
 
   handleFormSubmit({email, password}) {
@@ -53,7 +57,7 @@ class Login extends Component {
 
   render() {
     const {handleSubmit} = this.props
-    return (
+    const loginContent = (
       <section className="login-section">
         <div className="jumbotron jumbotron-fluid text-white">
           <div className="container ">
@@ -93,15 +97,16 @@ class Login extends Component {
         </div>
       </section>
     )
+    return <MainComponent status={this.props.status}>{loginContent}</MainComponent>
   }
 }
 
 const mapStateToProps = state => (
-  {authErrorMessage: state.auth.error}
+  {authErrorMessage: state.auth.error, status: state.auth.status}
 )
 
 
-Login = connect(mapStateToProps, {loginUser})(Login)
+Login = connect(mapStateToProps, {loginUser, verifyToken})(Login)
 
 export default reduxForm({
   form: "login"

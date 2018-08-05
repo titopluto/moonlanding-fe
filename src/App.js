@@ -3,9 +3,6 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import { Provider } from "react-redux";
 import { persistStore } from 'redux-persist'
 
-
-
-
 import PodList from "./components/containers/PodList"
 import ChangePassword from "./components/containers/ChangePassword"
 import Carousel from "./components/containers/Carousel"
@@ -21,14 +18,11 @@ import PageContent from "./components/ui/PageContent"
 //Redux Store
 import storeFactory from "./store"
 
-
-
 const store = storeFactory
 window.store = store
 
 
 class App extends Component {
-
   constructor() {
     super()
     this.state = {
@@ -38,7 +32,7 @@ class App extends Component {
   }
 
   componentWillMount(){
-    persistStore(store, {}, () => { this.setState({ rehydrated: true } )})
+    persistStore(store, { blacklist: ['auth'] }, () => { this.setState({ rehydrated: true } )})
    }
 
   toggle(name) {

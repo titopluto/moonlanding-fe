@@ -14,12 +14,7 @@ class Carousel extends React.Component {
 
   render() {
     const getImage = (imageName) => {
-      if (imageName === "banner1.jpg") {
-        return pchute
-      } else if (imageName === "bulb.jpg") {
-        return cloudHand
-      }
-      return redCloud
+      return `http://129.173.143.240:8001/${imageName}`
     }
     const carouselItems = this.props.carouselList.map(function (carousel) {
       return {
@@ -36,4 +31,3 @@ class Carousel extends React.Component {
 }
 
 export default Carousel
-

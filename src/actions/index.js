@@ -22,8 +22,6 @@ const token_issue = (error) => {
   }
 }
 
-
-
 export const activeDocPdf = (filename) => {
   return (dispatch) => {
     dispatch({
@@ -43,15 +41,14 @@ export const activeLabPdf = (pdf) => {
   )
 }
 
-// obsolete
 export const verifyToken = () => {
   return dispatch => {
+    dispatch({type: C.AUTH_VERIFY_USER})
     const token = localStorage.getItem("token")
     if (token) {
-      axios.post(`${TEMP_URL}/api-token-verify/`, {token: token})
+      axios.post(`${TEMP_URL}/token/verify/`, {token: token})
         .then(response => {
           // console.log("token verified to be valid")
-
           dispatch({type: C.AUTH_USER})
 
         })
@@ -93,7 +90,6 @@ export const loginUser = ({email, password}, history) => {
 
 
 export const logoutUser = (history) => {
-  console.log("IN ..")
   return dispatch => {
     if (verifyTokenExists()) {
       localStorage.removeItem("token");
@@ -196,9 +192,6 @@ export const fetchAllDevices = () => {
       })
   }
 }
-
-
-
 
 export const fetchDevices = (podId) => {
   return (dispatch) => {

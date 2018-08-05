@@ -8,7 +8,6 @@ import "../../static/css/Navigation.css"
 
 
 class Navigation extends Component {
-
   constructor(props) {
     super(props);
 
@@ -35,9 +34,9 @@ class Navigation extends Component {
   }
 
   renderAuthButton() {
-    const {authenticated, history, logoutUser} = this.props
+    const {authenticated} = this.props
     if (authenticated) {
-      return <Link to=""><span onClick={() => logoutUser(history)}>Logout</span></Link>
+      return <Link to=""><span>Logout</span></Link>
     }
   }
 
@@ -50,6 +49,8 @@ class Navigation extends Component {
   }
 
   render() {
+    const {history, logoutUser} = this.props
+
     return (
       <div>
         <Navbar color="inverse" expand>
@@ -67,7 +68,7 @@ class Navigation extends Component {
                 <Dropdown isOpen={this.state.isDropdownOpen} toggle={this.toggleDropdown}>
                   <DropdownToggle caret></DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem>{this.renderAuthButton()}</DropdownItem>
+                    <DropdownItem onClick={() => logoutUser(history)}>{this.renderAuthButton()}</DropdownItem>
                     <DropdownItem>{this.renderPasswordChangeButton()}</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>

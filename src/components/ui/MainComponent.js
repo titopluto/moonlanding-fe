@@ -12,7 +12,7 @@ const MainComponent = ({status, children, errorMessage}) => {
   }
 
   return <div>
-    {status ==="ERROR" ? <DangerMessage message={errorMessage}/> : null}
+    {status === "ERROR" && errorMessage ? <DangerMessage message={errorMessage}/> : null}
     {children}
   </div>
 }

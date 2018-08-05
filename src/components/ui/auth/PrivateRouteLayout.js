@@ -2,23 +2,32 @@ import React from "react"
 import {Route, Redirect} from 'react-router-dom';
 import {connect} from "react-redux"
 import {verifyToken, verifyTokenExists} from "../../../actions"
-import isTokenValid from "../../../auth/isTokenValid";
 import DefaultLayout from "../DefaultLayout";
+import MainComponent from "../MainComponent";
 
 class PrivateRouteLayout extends React.Component {
-  render() {
-    const {component, ...rest} = this.props
+  componentWillMount() {
+    this.props.verifyToken()
+  }
 
-    if (isTokenValid(localStorage.getItem("token"))) {
-      return <DefaultLayout component={component} {...rest} />
-    }
-    return <Route {...rest}
-                  render={props =>
-                    <Redirect to={{pathname: '/auth', state: {from: props.location}}}/>}/>
+  render() {
+    const {status, authenticated, component, ...rest} = this.props
+    console.log("Status ---> ", status)
+
+    return (
+      <MainComponent status={status}>
+        {
+          authenticated ? <DefaultLayout component={component} {...rest} /> : (
+            <Route {...rest}
+                   render={props =>
+                     <Redirect to={{pathname: '/auth', state: {from: props.location}}}/>}/>
+          )
+        }
+      </MainComponent>
+    )
   }
 }
 
-
-const mapStateToProps = state => ({authenticated: state.auth.authenticated})
+const mapStateToProps = state => ({authenticated: state.auth.authenticated, status: state.auth.status})
 
 export default connect(mapStateToProps, {verifyToken, verifyTokenExists})(PrivateRouteLayout)
