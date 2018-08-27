@@ -1,8 +1,8 @@
 import axios from "axios"
 import C from "./constants"
 
-//const API_URL = "http://access.inwk.dal.ca/api"
-const TEMP_URL = "http://129.173.143.240:8000/api"
+const TEMP_URL = "http://localhost:8000/api"
+
 
 const get_headers = () => {
   const token = localStorage.getItem("token")
